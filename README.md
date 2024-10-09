@@ -22,6 +22,9 @@ Get more than a passing familiarity with the underlying technology and main para
 
 
 ### AI Development Lifecycle
+
+[More detail here](./pages/aiml_dev_lifecycle.md)
+
 - Data collection and preparation
 - Labeling and augmentation
 - Model selection and training - Choose the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
@@ -36,10 +39,10 @@ Get more than a passing familiarity with the underlying technology and main para
   - [Towards a Standard for Identifying and Managing Bias in Artificial Intelligence](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf)
 - Interpretability and Explainability
   - [Explaining Explanations: An Overview of Interpretability of Machine Learning](https://arxiv.org/pdf/1806.00069)
-  - SHAP (Shapley Additive Explanations) - SHAP is a model-agnostic tool for explaining the output of machine learning models. It assigns each feature in a prediction a contribution value, using concepts from cooperative game theory (specifically Shapley values). SHAP values show how much each feature positively or negatively influenced the prediction, providing transparency even in complex models like neural networks or ensemble methods.
+  - SHAP (Shapley Additive Explanations) - 
     - [original paper](https://arxiv.org/pdf/1705.07874) 
     - [site](https://shap.readthedocs.io/en/latest/)
-  - LIME (Local Interpretable Model-agnostic Explanations) - SHAP is a model-agnostic tool for explaining the output of machine learning models. It assigns each feature in a prediction a contribution value, using concepts from cooperative game theory (specifically Shapley values). SHAP values show how much each feature positively or negatively influenced the prediction, providing transparency even in complex models like neural networks or ensemble methods.
+  - LIME (Local Interpretable Model-agnostic Explanations)
     - [paper](https://arxiv.org/abs/1602.04938)
     - [paper with code](https://github.com/marcotcr/lime)
 - Deployment and monitoring
@@ -219,23 +222,42 @@ These would be specializations
 
 ## Soft Skills for AI Auditors
 
-### Communication and Stakeholder Management
-- Explaining technical concepts to non-technical audiences
-- Negotiation and conflict resolution in audit scenarios
+Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors.
 
-### Ethical Decision Making
-- Navigating ethical dilemmas in AI auditing
+### Communication and Stakeholder Management
+- Explaining technical concepts to non-technical audiences, or mixed audiences composed of including data scientists, ethicists, and domain experts.
+- Communicating with stakeholders who may have varying levels of AI literacy and different concerns about AI/ML systems
+- Negotiation and conflict resolution in audit scenarios
+- Sector-specific knowledge
+
+### Critical & Ethical Decision Making
+- Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI. Must be able to critically evaluate AI-generated outputs, identify any potential biases or errors, and exercise independent judgment without yielding to mental lazyness or AI authority syndrom
+- Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
 - Balancing competing interests and priorities
 
 ## Tools
 
 - [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
-
+- [AI Ethics Policy Template](https://www.aiguardianapp.com/ai-ethics-policy-template)
+- [AI Ethics Toolkit](https://www.hum-dseg.org/ai-applied-ethics-toolkit)
+- [Assessment List for Trustworthy AI (ALTAI)](https://op.europa.eu/en/publication-detail/-/publication/73552fcd-f7c2-11ea-991b-01aa75ed71a1)
 
 ## Trainings
 
+- [ISACA](https://www.isaca.org/resources/artificial-intelligence)
+- [Theiia Auditing Artificial Intelligence (AI): A Hands-On Course for Internal Auditors](https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/)
+- [Theiia Essentials for AI Auditing](https://www.theiia.org/en/products/learning-solutions/course/internal-auditing-in-the-age-of-artificial-intelligence/)
+- [Babl Courses](https://babl.ai/courses/)
+- [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
+- [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
+
+
+## Books
+
+- [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
 
 ## Vendor links
 
+- Azure - [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2)
 - AWS - https://aws.amazon.com/ai/generative-ai/security/
 
