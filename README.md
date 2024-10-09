@@ -63,7 +63,13 @@ Get more than a passing familiarity with the underlying technology and main para
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
-- Algorithmic Transparency - providing clear information about the algorithms used in AI systems
+- Algorithmic Transparency - ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
+  - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
+  - For Black box models, providing query access to the model without exposing internal implementation
+  - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases
+
+  As an auditor there are several evidence gathering techniques available to you. 
+
 - Interpretable ML models
 - Privacy and data protection - standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
   - [Differential privacy](https://arxiv.org/abs/1412.7584)
@@ -235,12 +241,14 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
 - Balancing competing interests and priorities
 
-## Tools
+## Tools, Templates, Checklists
 
 - [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
 - [AI Ethics Policy Template](https://www.aiguardianapp.com/ai-ethics-policy-template)
 - [AI Ethics Toolkit](https://www.hum-dseg.org/ai-applied-ethics-toolkit)
 - [Assessment List for Trustworthy AI (ALTAI)](https://op.europa.eu/en/publication-detail/-/publication/73552fcd-f7c2-11ea-991b-01aa75ed71a1)
+- [NOREA Guiding Principles Trustworthy AI Investigations](https://www.norea.nl/uploads/bfile/a344c98a-e334-4cf8-87c4-1b45da3d9bc1)
+- [UK A Guide to ICO Audit Artificial Intelligence (AI) Audits](https://ico.org.uk/media/for-organisations/documents/4022651/a-guide-to-ai-audits.pdf)
 
 ## Trainings
 
@@ -252,9 +260,10 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
 
 
-## Books
+## Books, Papers
 
 - [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
+- [Towards a Business Case for AI Ethics](https://jyx.jyu.fi/bitstream/handle/123456789/93508/agbeseym.pdf?sequence=1&isAllowed=y) (direct PDF download). Also available as part of this Open Access Book, [Software Business](https://link.springer.com/book/10.1007/978-3-031-53227-6)
 
 ## Vendor links
 

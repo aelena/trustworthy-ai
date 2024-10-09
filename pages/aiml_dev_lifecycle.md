@@ -71,7 +71,7 @@ This crucial phase involves assessing the model's performance:
 This stage is particularly important for AI systems:
 
 - Implementing [SHAP](https://arxiv.org/pdf/1705.07874) (SHapley Additive exPlanations) - SHAP is a model-agnostic tool for explaining the output of machine learning models. It assigns each feature in a prediction a contribution value, using concepts from cooperative game theory (specifically Shapley values). SHAP values show how much each feature positively or negatively influenced the prediction, providing transparency even in complex models like neural networks or ensemble methods. 
-- Implementing [LIME](https://arxiv.org/abs/1602.04938) (Local Interpretable Model-agnostic Explanations) - a technique designed to explain individual predictions of any machine learning model, including complex "black box" models. It creates a simplified, interpretable local model that approximates the behavior of the complex model around a specific prediction. LIME perturbs the input data, observes the model's responses, and fits a simple model (like linear regression) to this local behavior. The result is a list of features and their importance in contributing to the specific prediction, often presented visually. This approach is model-agnostic, meaning it can be applied to any type of machine learning model, and it provides local explanations rather than global model interpretations. LIME is particularly valuable in fields where understanding the reasoning behind predictions is crucial, such as healthcare or finance, helping to build trust in model predictions and aiding in model debugging. However, it's important to note that while LIME offers insights into individual predictions, it may not capture the overall behavior of the model across all possible inputs.
+- Implementing [LIME](https://arxiv.org/abs/1602.04938) (Local Interpretable Model-agnostic Explanations) - a technique designed to explain individual predictions of any machine learning model (model-agnostic) in an interpretable and faithful manner, including complex "black box" models. It creates a simplified, interpretable local model that approximates the behavior of the complex model around a specific prediction. LIME perturbs the input data, observes the model's responses, and fits a simple model (like linear regression) to this local behavior. The result is a list of features and their importance in contributing to the specific prediction, often presented visually. This approach is model-agnostic, meaning it can be applied to any type of machine learning model, and it provides local explanations rather than global model interpretations. LIME is particularly valuable in fields where understanding the reasoning behind predictions is crucial, such as healthcare or finance, helping to build trust in model predictions and aiding in model debugging. However, it's important to note that while LIME offers insights into individual predictions, it may not capture the overall behavior of the model across all possible inputs.
 - Generating [feature importance rankings](https://truera.com/ai-quality-education/explainability/how-to-interpret-and-use-feature-importance-in-ml-models/). Feature importance is often used for dimensionality reduction by assigning a score to different input features based on how useful those are at predicting a target variable. Feature importance may also be used for model inspection and communication.
 - Creating partial dependence plots
 - Developing user-friendly explanations of model decisions
@@ -101,11 +101,19 @@ This phase involves integrating the model into production systems, often with mo
 
 AI systems may require more sophisticated monitoring due to their complex nature and potential for unexpected behaviors, including hallucinations or drifting.
 
+---
+
 **Links**
+
+[What Is the AI Development Lifecycle?](https://www.paloaltonetworks.com/cyberpedia/ai-development-lifecycle)
+
+[AI lifecycle models need to be revised](https://www.researchgate.net/publication/353128118_AI_lifecycle_models_need_to_be_revised)
 
 [Monitoring machine learning models: a categorization of challenges and methods](https://www.sciencedirect.com/science/article/pii/S2666764922000303)
 
 [Model Drift in ML](https://towardsdatascience.com/drift-in-machine-learning-e49df46803a)
+
+
 
 ## Conclusion
 
