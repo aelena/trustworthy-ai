@@ -138,11 +138,12 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
   - Evasion
   - Poisoning, data poisoning - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions.
   - Model Extraction
-- Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, Carlini & Wagner Attack, how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
-- Generating and detecting adversarial examples
+- Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
+- Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
   - Ability to create adversarial inputs for various types of AI models
   - Ability to assess AI models' resilience against adversarial attacks
-- Defenses against adversarial attacks - Proficiency in applying techniques like adversarial training, defensive distillation and gradient masking/obfuscation
+- Defenses against adversarial attacks - understanding how techniques like adversarial training, defensive distillation and gradient masking/obfuscation work and are applied
+
 
 ### AI System Hardening
 - Secure AI development practices
@@ -172,6 +173,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Bias measurement techniques
   - [De-biasing "bias" measurement](https://arxiv.org/abs/2205.05770)
 - Strategies for reducing bias in AI systems
+  - [Mitigating bias in artificial intelligence](https://www.sciencedirect.com/science/article/pii/S0167739X24000694)
 
 ### AI Performance Metrics
 - Selecting appropriate evaluation metrics
@@ -220,7 +222,7 @@ These would be specializations
 
 ### Programming for AI Auditing
 - Basic Python for data analysis and model inspection
-- Using libraries for fairness and explainability (e.g., AI Fairness 360, SHAP)
+- Using libraries for fairness and explainability (such as [AI Fairness 360](https://aif360.res.ibm.com/) ([paper](https://arxiv.org/abs/1810.01943)) or SHAP)
 
 ### Visualization and Reporting
 - Data visualization techniques for AI audit findings
@@ -228,7 +230,7 @@ These would be specializations
 
 ## Soft Skills for AI Auditors
 
-Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors.
+Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors. 
 
 ### Communication and Stakeholder Management
 - Explaining technical concepts to non-technical audiences, or mixed audiences composed of including data scientists, ethicists, and domain experts.
@@ -237,7 +239,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - Sector-specific knowledge
 
 ### Critical & Ethical Decision Making
-- Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI. Must be able to critically evaluate AI-generated outputs, identify any potential biases or errors, and exercise independent judgment without yielding to mental lazyness or AI authority syndrom
+- Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI without yielding to mental lazyness or AI authority syndrom
 - Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
 - Balancing competing interests and priorities
 
@@ -264,6 +266,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 
 - [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
 - [Towards a Business Case for AI Ethics](https://jyx.jyu.fi/bitstream/handle/123456789/93508/agbeseym.pdf?sequence=1&isAllowed=y) (direct PDF download). Also available as part of this Open Access Book, [Software Business](https://link.springer.com/book/10.1007/978-3-031-53227-6)
+
 
 ## Vendor links
 
