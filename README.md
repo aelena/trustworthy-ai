@@ -63,15 +63,15 @@ Get more than a passing familiarity with the underlying technology and main para
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
-- Algorithmic Transparency - ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
+- Algorithmic Transparency (level 1 of AI Transparency) - ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
   - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
   - For Black box models, providing query access to the model without exposing internal implementation
   - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases
 
-  As an auditor there are several evidence gathering techniques available to you. 
+  As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
 
 - Interpretable ML models
-- Privacy and data protection - standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
+- Privacy and data protection, standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
   - [Differential privacy](https://arxiv.org/abs/1412.7584)
 - Accountability and responsibility
 - Communicating AI decisions to stakeholders
@@ -119,7 +119,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Risk assessment and mitigation strategies
 - Fail-safe mechanisms and graceful degradation
 - Long-term AI safety considerations
-  - All AI 6 AGI Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list. 
+  - All of AI 6 AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads. 
 
 
 ## AI Security and Adversarial AI
@@ -189,30 +189,19 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 ### AI-Specific Regulations
 - Need to have an understanding of the different AI regulations or frameworks (e.g., EU AI Act, NIST AI Risk Management Framework) referenced elsewhere in this document, in order to leverage them and understand which ones might apply in each specific audit scenario.
-- Sector-specific AI regulations (e.g., finance, healthcare). There are many of those. Some relevant examples:
+- Sector-specific AI regulations, use cases and applications.There are many of those. Some relevant examples:
   - [Financial Industry Regulatory Authority (FINRA) AI/ML Guidelines](https://www.finra.org/rules-guidance/key-topics/fintech/report/artificial-intelligence-in-the-securities-industry/ai-apps-in-the-industry). The notes to this document provide additional sector-specific links
+  - AI in credit scoring and fraud detection, with its own set of biases and risks
+  - Algorithmic trading and risk management
   - [In HR and Hiring](https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence)
+  - In Healthcare, with specializations such as AI in medical diagnosis and treatment planning and its plethora of accompanying ethical and data privacy considerations.
+  - Manufactoring, IoT, such as AI in predictive maintenance and quality control or safety considerations for AI-powered robotics
 
 ### Data Protection and Privacy Laws
 - GDPR and other relevant data protection regulations
 - Privacy-preserving AI techniques
   - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
-
-## Industry-Specific AI Applications
-These would be specializations
-
-### Financial Services
-- AI in credit scoring and fraud detection
-- Algorithmic trading and risk management
-
-### Healthcare
-- AI in medical diagnosis and treatment planning
-- Ethical considerations in healthcare AI
-
-### Manufacturing and IoT
-- AI in predictive maintenance and quality control
-- Safety considerations for AI-powered robotics
 
 ## Practical Skills and Tools
 
