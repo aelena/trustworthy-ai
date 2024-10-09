@@ -31,7 +31,6 @@ Get more than a passing familiarity with the underlying technology and main para
 - Performance metrics - what were the performance metrics for the AI system.
   - [Metrics to evaluate ML algorithms](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
 - Bias and Fairness testing
-  - [The Fairness and ML Book](https://fairmlbook.org/)
   - [Managing bias and unfairness in data for decision support](https://link.springer.com/article/10.1007/s00778-021-00671-8)
   - [Investigating Bias with a Synthetic Data Generator](https://arxiv.org/abs/2209.05889)
   - [Towards a Standard for Identifying and Managing Bias in Artificial Intelligence](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf)
@@ -48,8 +47,14 @@ Get more than a passing familiarity with the underlying technology and main para
 
 ## AI Ethics and Governance
 
+### Ethics Requirements
+  - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
+  - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
+  - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
+
 ### Ethical AI Principles
 - Fairness and non-discrimination - Group and Individual Fairness, techniques to mitigate bias in training data and model outputs. Bias Detection and Mitigation and methods to identify and reduce unfair bias in AI systems.
+  - [The Fairness and ML Book](https://fairmlbook.org/)
   - [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/abs/1908.09635)
 - Transparency and explainability - Techniques to make AI models more interpretable and their decisions more understandable, understand how models arrive at their decisions. Explainable AI (XAI) techniques: 
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
@@ -156,6 +161,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 ### Bias Detection and Mitigation
 - [Types of AI bias](./pages/types_ai_bias.md)
 - Bias measurement techniques
+  - [De-biasing "bias" measurement](https://arxiv.org/abs/2205.05770)
 - Strategies for reducing bias in AI systems
 
 ### AI Performance Metrics

@@ -19,6 +19,8 @@
 - Aggregation Bias - When a model works well for the overall population but performs poorly for specific subgroups.
 - Historical Bias - When AI models trained on historical data reflect past prejudices and societal inequalities.
 
+--- 
+
 ![bias types](./img/aibias.jpg)
 
 [source](https://cacm.acm.org/practice/biases-in-ai-systems/)
