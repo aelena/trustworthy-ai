@@ -227,7 +227,9 @@ These would be specializations
 - Navigating ethical dilemmas in AI auditing
 - Balancing competing interests and priorities
 
-## Readings (Books and papers)
+## Tools
+
+- [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
 
 
 ## Trainings
