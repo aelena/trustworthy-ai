@@ -16,6 +16,7 @@ Get more than a passing familiarity with the underlying technology and main para
   - [Basic concepts and terminology](https://medium.com/nlplanet/the-basic-concepts-and-terms-you-need-to-know-for-ai-and-ml-28eb07fd6c49)
 - Types of ML and AI systems
   - Types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer
+  - [Basic Algorithms](https://www.tableau.com/data-insights/ai/algorithms)
   - Deep Learning
   - Neural networks (FNN, RNN, CNN, [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
 - Machine learning algorithms and techniques
@@ -240,6 +241,12 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [Assessment List for Trustworthy AI (ALTAI)](https://op.europa.eu/en/publication-detail/-/publication/73552fcd-f7c2-11ea-991b-01aa75ed71a1)
 - [NOREA Guiding Principles Trustworthy AI Investigations](https://www.norea.nl/uploads/bfile/a344c98a-e334-4cf8-87c4-1b45da3d9bc1)
 - [UK A Guide to ICO Audit Artificial Intelligence (AI) Audits](https://ico.org.uk/media/for-organisations/documents/4022651/a-guide-to-ai-audits.pdf)
+
+### Github
+
+- [Trustworthy AI, AI+Security Papers](https://github.com/nuaa-nlp/TrustworthyAIPapers)
+- [Toolkit for "TrustLLM: Trustworthiness in Large Language Models"](https://github.com/HowieHwong/TrustLLM)
+- [AuditNLG: Auditing Generative AI Language Modeling for Trustworthiness (Salesforce)](https://github.com/salesforce/AuditNLG)
 
 ## Trainings
 
