@@ -12,7 +12,46 @@ I realize the term itself can be a bit laden and potentially a misnomer (or a [n
 
 - **False attribution**: in the wake of the previous point, we might end up  attributing responsibilities to agents who cannot be held responsible, which poses interesting problems regarding accountability and liability. 
 
-One could think of structuring this in two main tracks, the Technical and the Regulatory, which would include as well the ethical, social and philosophical. 
+## Main structure
+
+One could think of structuring this in two main tracks, the Technical (which covers some basics and includes adjacent areas in Security) and the Regulatory, which would include as well the ethical, social and philosophical. To that I added a third section for AI auditors.
+
+## ToC
+
+[Technical Track](#technical-track)
+  - [AI / ML Fundamentals](#ai-and-ml-fundamentals)
+  - [AI Development Lifecycle](#ai-development-lifecycle)
+  - [Transparency and Explainability](#transparency-and-explainability)
+  - [The Security Aspect](#the-security-aspect)
+    - [AI Security Fundamentals](#ai-security-fundamentals)
+    - [AI Security and Adversarial AI](#ai-security-and-adversarial-ai)
+
+[Regulatory Track](#regulatory)
+  - [Trustworthy AI](#trustworthy-ai)
+  - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
+  - [AI-Specific Regulations](#ai-specific-regulations)
+  - [Governance](#governance)
+    - [Ethical AI Principles](#ethical-ai-principles)
+    - [Ethics Requirements](#ethics-requirements)
+    - [AI Governance Frameworks](#ai-governance-frameworks)
+    - [AI Safety](#ai-safety)
+
+[On Auditing and Assessments](#auditing-and-assessments)
+  - [Audit Planning and Scoping](#audit-planning-and-scoping)
+  - [Specialized AI Auditing Skills](#specialized-ai-auditing-skills)
+  - [Bias Detection and Mitigation](#bias-detection-and-mitigation)
+  - [Practical Skills and Tools](#practical-skills-and-tools)
+    - [Programming for AI Auditing](#programming-for-ai-auditing)
+    - [Visualization and Reporting](#visualization-and-reporting)
+  - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
+
+[Additional]
+- [Tools, Templates, Checklists](#tools-templates-checklists)
+- [Specialized Trainings](#specialized-trainings)
+- [Other Books & Papers](#other-books--papers)
+- [Vendor links](#vendor-links)
+
+<br/>
 
 __This document is necessarily work in progress and does not intend to be a final one stop shop__
 
@@ -87,7 +126,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 - Handling edge cases and outliers
 
 
-## AI Security and Adversarial AI
+## The Security aspect
 
 ### AI Security Fundamentals
 - Threat modeling for AI systems
@@ -97,7 +136,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 - Common attack vectors and vulnerabilities
 
-## The Security aspect
+## AI Security and Adversarial AI
 
 ### Adversarial Attacks
 - White Box & Black Box - https://deepgram.com/ai-glossary/adversarial-machine-learning
@@ -121,6 +160,10 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 # Regulatory
 
+## Trustworthy AI
+
+- https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
 ## Legal and Regulatory Compliance
 
 ## AI-Specific Regulations
@@ -138,20 +181,15 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 - Privacy-preserving AI techniques
   - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
-## AI Ethics and Governance
+ç
+
+## Governance
 
 Good overview and understanding of the main topics around Ethics and Governance and what Regulators, think-tanks and industry groups of interest are putting out that affects the evaluation and assessments of models, and also guides the auditor be aligned in terms of compliance and potential certification of AI & ML models. 
 
 Understand as well the societal and philosophical derivations of the technology, from obvious consideration of labor market impact, to HCI, etc.
 
-## Governance
-
 - Accountability and responsibility
-
-### Ethics Requirements
-  - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
-  - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
-  - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
 
 ### Ethical AI Principles
 
@@ -162,9 +200,14 @@ Basic guidance such as that provided by the [OECD AI Policy Observatory](https:/
   - [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/abs/1908.09635)
 
 - Data Privacy considerations. General sound privacy and data protection regulation and standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
+
+### Ethics Requirements
+  - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
+  - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
+  - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
+
+
   
-- Accountability and responsibility
-- Communicating AI decisions to stakeholders
 
 ### AI Governance Frameworks
 - Regulatory landscape and compliance requirements
@@ -188,12 +231,6 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
   - [Defining organizational AI governance](https://link.springer.com/content/pdf/10.1007/s43681-022-00143-x.pdf) (open access journal article)
   - [Toward AI Governance: Identifying Best Practices and Potential Barriers and Outcomes](https://link.springer.com/article/10.1007/s10796-022-10251-y)
 
-## Trustworthy AI
-
-More on this topic on the [principles for Trustworthy AI](./pages/principles.md) page.
-
-- https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
-
 
 
 ### AI Safety
@@ -204,11 +241,9 @@ More on this topic on the [principles for Trustworthy AI](./pages/principles.md)
 
 <br/>
 
-# Auditing and Assessing
+# Auditing and Assessments
 
-## AI Auditing Methodologies
-
-### Audit Planning and Scoping
+## Audit Planning and Scoping
 - Defining audit objectives and scope
 - Risk assessment for AI systems
 - Developing audit criteria and checklists
@@ -229,7 +264,7 @@ More on this topic on the [principles for Trustworthy AI](./pages/principles.md)
 
 ## Specialized AI Auditing Skills
 
-### Bias Detection and Mitigation
+## Bias Detection and Mitigation
 - [Types of AI bias](./pages/types_ai_bias.md)
 - Bias measurement techniques
   - [De-biasing "bias" measurement](https://arxiv.org/abs/2205.05770)
@@ -279,7 +314,9 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 
 <br/>
 
-# Tools, Templates, Checklists
+# Additional 
+
+## Tools, Templates, Checklists
 
 - [Self-Assessment list for Trustworthy AI (ALTAI)](https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342) (direct PDF download)
 - [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
@@ -290,23 +327,13 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [UK A Guide to ICO Audit Artificial Intelligence (AI) Audits](https://ico.org.uk/media/for-organisations/documents/4022651/a-guide-to-ai-audits.pdf)
 - [AI Incident Database](https://incidentdatabase.ai/)
 - [LatticeFlow's](https://latticeflow.ai/solutions/ai-assessments/) - for example involved in the [EU AI Act compliance assessment](https://opentools.ai/news/eu-ai-act-compliance-checker-reveals-tech-giants-weak-spots?utm_source=opentoolsai-newsletter&utm_medium=newsletter&utm_campaign=ai-compliance-shocker&_bhlid=6fb422971ae5f7227094d0d7914074df7eaf8b5c)
-
-
-## Github
-
-
 - [Toolkit for "TrustLLM: Trustworthiness in Large Language Models"](https://github.com/HowieHwong/TrustLLM)
 - [AuditNLG: Auditing Generative AI Language Modeling for Trustworthiness (Salesforce)](https://github.com/salesforce/AuditNLG)
 
-<br/>
-
-# Regulatory
-
-- [OECD AI Policy Observatory](https://oecd.ai/en/) and its [AI Principles](https://oecd.ai/en/ai-principles)
 
 <br/>
 
-# Specialized Trainings
+## Specialized Trainings
 
 - [ISACA](https://www.isaca.org/resources/artificial-intelligence)
 - [Theiia Auditing Artificial Intelligence (AI): A Hands-On Course for Internal Auditors](https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/)
@@ -317,7 +344,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 
 <br/>
 
-# Other Books & Papers
+## Other Books & Papers
 
 - [Trustworthy AI, AI+Security Papers](https://github.com/nuaa-nlp/TrustworthyAIPapers)
 - [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
@@ -329,7 +356,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 <br/>
 
 
-# Some Vendor links
+## Vendor links
 
 - Azure - [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2)
 - AWS - https://aws.amazon.com/ai/generative-ai/security/
