@@ -22,22 +22,29 @@ One could think of structuring this in two main tracks, the Technical (which cov
   - [AI / ML Fundamentals](#ai-and-ml-fundamentals)
   - [AI Development Lifecycle](#ai-development-lifecycle)
   - [Transparency and Explainability](#transparency-and-explainability)
+  - [Reliability and Robustness](#reliability-and-robustness)
   - [The Security Aspect](#the-security-aspect)
     - [AI Security Fundamentals](#ai-security-fundamentals)
+    - [Data Privacy and Security](#data-privacy-and-security-technical)
     - [AI Security and Adversarial AI](#ai-security-and-adversarial-ai)
+  - [On Syntethic data](#on-synthetic-data)
 
 [Regulatory Track](#regulatory)
   - [Trustworthy AI](#trustworthy-ai)
   - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
   - [AI-Specific Regulations](#ai-specific-regulations)
+  - [Data Privacy Protection](#data-privacy-protection)
+  - [Synthetic Data Considerations](#synthetic-data-considerations)
   - [Governance](#governance)
     - [Ethical AI Principles](#ethical-ai-principles)
     - [Ethics Requirements](#ethics-requirements)
     - [AI Governance Frameworks](#ai-governance-frameworks)
     - [AI Safety](#ai-safety)
+    - [Sustainability Considerations](#sustainability-considerations)
 
 [On Auditing and Assessments](#auditing-and-assessments)
   - [Audit Planning and Scoping](#audit-planning-and-scoping)
+  - [Risk management in AI Auditing](#risk-management-in-ai-auditing)
   - [Specialized AI Auditing Skills](#specialized-ai-auditing-skills)
   - [Bias Detection and Mitigation](#bias-detection-and-mitigation)
   - [Practical Skills and Tools](#practical-skills-and-tools)
@@ -114,7 +121,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
   As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
 
-### Reliability and Robustness
+## Reliability and Robustness
 - Model performance evaluation - going beyond the [basic accuracy metrics](https://c3.ai/introduction-what-is-machine-learning/evaluating-model-performance/), such as precision, recall, F1-score, and AUC-ROC, to provide a holistic view of model performance
   - [cross-validation and other techniques](https://www.markovml.com/blog/model-evaluation-metrics) to ensure the model's performance is consistent across different subsets of data
 - Error analysis and [debugging](https://www.markovml.com/blog/ml-model-debugging)
@@ -124,6 +131,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
   -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions.
 - Handling edge cases and outliers
+
 
 
 ## The Security aspect
@@ -136,7 +144,14 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 - Common attack vectors and vulnerabilities
 
-## AI Security and Adversarial AI
+### Data Privacy and Security (technical)
+
+- Audit implementation of access controls, security measures, encryption techniques, and safeguards in place to protect data in AI/ML models. 
+- How do AI systems manage data
+- Anonymization techniques
+- Securing data pipelines to prevent unauthorized access or breaches.
+
+### AI Security and Adversarial AI
 
 ### Adversarial Attacks
 - White Box & Black Box - https://deepgram.com/ai-glossary/adversarial-machine-learning
@@ -158,6 +173,15 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 <br/>
 
+## On Synthetic data
+
+- Understand the growing relevante of synthetic data
+- Concerns around Synthetic Data Generation and Security
+- Presence of Bias in Synthetic Data
+- Validation and Testing with Synthetic Data 
+
+<br/>
+
 # Regulatory
 
 ## Trustworthy AI
@@ -176,12 +200,15 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - In Healthcare, with specializations such as AI in medical diagnosis and treatment planning and its plethora of accompanying ethical and data privacy considerations.
   - Manufactoring, IoT, such as AI in predictive maintenance and quality control or safety considerations for AI-powered robotics
 
-### Data Protection and Privacy Laws
-- GDPR and other relevant data protection regulations
-- Privacy-preserving AI techniques
+## Data Privacy Protection
+- GDPR, CCPA and other relevant data protection regulations
+- Associated risks and Privacy-preserving AI techniques
   - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
-ç
+## [Synthetic Data Considerations](./pages/synth_data.md)
+
+- Data Privacy and Synthetic Data
+- Ethical and Regulatory Compliance in Synthetic Data Usage
 
 ## Governance
 
@@ -239,7 +266,10 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Long-term AI safety considerations
   - All of AI 6 AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads. 
 
+### Sustainability Considerations
+
 <br/>
+
 
 # Auditing and Assessments
 
@@ -247,6 +277,10 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Defining audit objectives and scope
 - Risk assessment for AI systems
 - Developing audit criteria and checklists
+
+### Risk management in AI Auditing
+
+- Identifying, assessing, and mitigating risks specific to AI models
 
 ### Audit Execution Techniques
 - Data sampling and analysis
@@ -261,6 +295,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 ### AI Auditing Tools and Platforms
 - Overview of commercial and open-source auditing tools
 - Hands-on experience with selected tools
+
 
 ## Specialized AI Auditing Skills
 
