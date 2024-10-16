@@ -45,7 +45,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
     - [Visualization and Reporting](#visualization-and-reporting)
   - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
 
-[Additional]
+[Additional Stuff](#additional)
 - [Tools, Templates, Checklists](#tools-templates-checklists)
 - [Specialized Trainings](#specialized-trainings)
 - [Other Books & Papers](#other-books--papers)
