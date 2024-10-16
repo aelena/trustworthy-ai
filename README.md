@@ -1,37 +1,49 @@
 # Trustworthy AI
 
-This is a collection of links, documents attempting to outline a comprehensive programme for setting up an in-company Trustworthy AI initiative or capability. It's a wide and evolving topic that spans areas beyond technology itself, including ethics, law, social sciences and even philosophy. 
+This repository tries to outline a comprehensive programme for setting up an in-house Trustworthy AI initiative or capability group. It's a wide and evolving topic that spans areas beyond technology itself, including ethics, law, social sciences and even philosophy. Therefore this lists the knowledge and capabilities the group of AI auditors should have. 
+
+This takes inspiration from a large number of public papers (arxiv mostly) on the technical side of things, as well as document from regulators, think-tanks and other policy actors.
+
+I realize the term itself can be a bit laden and potentially a misnomer (or a [nonsense](https://philarchive.org/archive/FREMSOv1), even) which some vendors could be pushing in order to drive the hype to their favour or sell their services. In fact, all major vendors are pushing their capalities and assessment checklists.
+
+- **Lack of standard definition**. it can be said there is no unversally accepted definition of what TAI is, but regulators and research is converging on a specific set of principles and areas that I think offer a good enough definition.
+
+- **Oversimplification**: Trust is relational, context-dependent, and earned over time. Simply labeling an AI system as "trustworthy" doesn’t account for the deeper, more nuanced aspects of human trust or the need for ongoing scrutiny as AI evolves. It can also drive forward the perilous tendency to trust AI / ML outputs by default. 
+
+- **False attribution**: in the wake of the previous point, we might end up  attributing responsibilities to agents who cannot be held responsible, which poses interesting problems regarding accountability and liability. 
+
+One could think of structuring this in two main tracks, the Technical and the Regulatory, which would include as well the ethical, social and philosophical. 
 
 __This document is necessarily work in progress and does not intend to be a final one stop shop__
 
+<br/>
 
+# Technical Track
 
-## Basics
-
-### AI and ML Fundamentals
+## AI and ML Fundamentals
 
 Get more than a passing familiarity with the underlying technology and main paradigms. 
 
 - Introduction to AI and ML
   - [Basic concepts and terminology](https://medium.com/nlplanet/the-basic-concepts-and-terms-you-need-to-know-for-ai-and-ml-28eb07fd6c49)
 - Types of ML and AI systems
-  - Types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer
+  - Have at least a basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer
   - [Basic Algorithms](https://www.tableau.com/data-insights/ai/algorithms)
-  - Deep Learning
-  - Neural networks (FNN, RNN, CNN, [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
+  - How AI, ML and Deep Learning are related.
+  - Neural networks (FNN, RNN, CNN, LSTM, [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
 - Machine learning algorithms and techniques
 
 
-### AI Development Lifecycle
+## AI Development Lifecycle
 
-[More detail here](./pages/aiml_dev_lifecycle.md)
+Understand all the stages of the AI & ML Development Lifecycle and what each stage entails. [More detail here](./pages/aiml_dev_lifecycle.md)
 
 - Data collection and preparation
 - Labeling and augmentation
 - Model selection and training - Choose the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
 - Training phases
-  - Hyperparameter Tuning: Adjust hyperparameters (e.g., learning rate, regularization factors) to optimize the model's performance. Techniques such as grid search, random search, or more advanced approaches like Bayesian optimization are often employed.
-  - Cross-Validation
+  - [Hyperparameter Tuning](https://arxiv.org/abs/2003.05689) : Adjust hyperparameters (e.g., learning rate, regularization factors) to optimize the model's performance. Techniques such as grid search, random search, or more advanced approaches like Bayesian optimization are often employed ([Hyperparameter Optimization For Compute Efficient Training](https://arxiv.org/abs/2306.08055), [Hyperparameters in Reinforcement Learning and How To Tune Them](https://arxiv.org/abs/2306.01324))
+  - [Cross-Validation](./pages/cross_valid.md), to evaluate a model's performance and generalization ability. This allows to obtain a better estimate of a model's performance on previously unseen data compared to a classic train-test split. By testing the model on multiple subsets of data, cross-validation helps detect and prevent the classic issue of overfitting.
 - Performance metrics - what were the performance metrics for the AI system.
   - [Metrics to evaluate ML algorithms](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
 - Bias and Fairness testing
@@ -48,18 +60,8 @@ Get more than a passing familiarity with the underlying technology and main para
     - [paper with code](https://github.com/marcotcr/lime)
 - Deployment and monitoring
 
+## Transparency and Explainability
 
-## AI Ethics and Governance
-
-### Ethics Requirements
-  - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
-  - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
-  - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
-
-### Ethical AI Principles
-- Fairness and non-discrimination - Group and Individual Fairness, techniques to mitigate bias in training data and model outputs. Bias Detection and Mitigation and methods to identify and reduce unfair bias in AI systems.
-  - [The Fairness and ML Book](https://fairmlbook.org/)
-  - [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/abs/1908.09635)
 - Transparency and explainability - Techniques to make AI models more interpretable and their decisions more understandable, understand how models arrive at their decisions. Explainable AI (XAI) techniques: 
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
@@ -68,18 +70,101 @@ Get more than a passing familiarity with the underlying technology and main para
   - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
   - For Black box models, providing query access to the model without exposing internal implementation
   - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases
+- Interpretability of AI/ML models
+- [Differential privacy](https://arxiv.org/abs/1412.7584)
 
   As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
 
-- Interpretable ML models
-- Privacy and data protection, standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
-  - [Differential privacy](https://arxiv.org/abs/1412.7584)
+### Reliability and Robustness
+- Model performance evaluation - going beyond the [basic accuracy metrics](https://c3.ai/introduction-what-is-machine-learning/evaluating-model-performance/), such as precision, recall, F1-score, and AUC-ROC, to provide a holistic view of model performance
+  - [cross-validation and other techniques](https://www.markovml.com/blog/model-evaluation-metrics) to ensure the model's performance is consistent across different subsets of data
+- Error analysis and [debugging](https://www.markovml.com/blog/ml-model-debugging)
+  - [Confusion Matrix Analysis](https://en.wikipedia.org/wiki/Confusion_matrix) which examines the types of errors (false positives, false negatives) to understand where the model struggles2.
+  - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions.
+  - Error Patterns: Identifying systematic errors or biases in the model's predictions.
+  - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
+  -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions.
+- Handling edge cases and outliers
+
+
+## AI Security and Adversarial AI
+
+### AI Security Fundamentals
+- Threat modeling for AI systems
+  - [MLSecOps](https://mlsecops.com/)
+  - [Threat Modeling AI/ML Systems and Dependencies](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
+  - [Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications](https://arxiv.org/abs/2406.11007)
+
+- Common attack vectors and vulnerabilities
+
+## The Security aspect
+
+### Adversarial Attacks
+- White Box & Black Box - https://deepgram.com/ai-glossary/adversarial-machine-learning
+- Types of adversarial attacks - https://viso.ai/deep-learning/adversarial-machine-learning/
+  - Evasion
+  - Poisoning, data poisoning - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions.
+  - Model Extraction
+- Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
+- Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
+  - Ability to create adversarial inputs for various types of AI models
+  - Ability to assess AI models' resilience against adversarial attacks
+- Defenses against adversarial attacks - understanding how techniques like adversarial training, defensive distillation and gradient masking/obfuscation work and are applied
+
+
+### AI System Hardening
+- Secure AI development practices
+- Model and data protection techniques
+
+
+<br/>
+
+# Regulatory
+
+## Legal and Regulatory Compliance
+
+## AI-Specific Regulations
+- Need to have an understanding of the different AI regulations or frameworks (e.g., EU AI Act, NIST AI Risk Management Framework) referenced elsewhere in this document, in order to leverage them and understand which ones might apply in each specific audit scenario.
+- Sector-specific AI regulations, use cases and applications.There are many of those. Some relevant examples:
+  - [Financial Industry Regulatory Authority (FINRA) AI/ML Guidelines](https://www.finra.org/rules-guidance/key-topics/fintech/report/artificial-intelligence-in-the-securities-industry/ai-apps-in-the-industry). The notes to this document provide additional sector-specific links
+  - AI in credit scoring and fraud detection, with its own set of biases and risks
+  - Algorithmic trading and risk management
+  - [In HR and Hiring](https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence)
+  - In Healthcare, with specializations such as AI in medical diagnosis and treatment planning and its plethora of accompanying ethical and data privacy considerations.
+  - Manufactoring, IoT, such as AI in predictive maintenance and quality control or safety considerations for AI-powered robotics
+
+### Data Protection and Privacy Laws
+- GDPR and other relevant data protection regulations
+- Privacy-preserving AI techniques
+  - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
+
+## AI Ethics and Governance
+
+Good overview and understanding of the main topics around Ethics and Governance and what Regulators, think-tanks and industry groups of interest are putting out that affects the evaluation and assessments of models, and also guides the auditor be aligned in terms of compliance and potential certification of AI & ML models. 
+
+Understand as well the societal and philosophical derivations of the technology, from obvious consideration of labor market impact, to HCI, etc.
+
+## Governance
+
+- Accountability and responsibility
+
+### Ethics Requirements
+  - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
+  - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
+  - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
+
+### Ethical AI Principles
+
+Basic guidance such as that provided by the [OECD AI Policy Observatory](https://oecd.ai/en/) and its [AI Principles](https://oecd.ai/en/ai-principles) will help any organization put in place their own principles as well as offer a guide as to what aspects to look for and evaluate in AI/ML models. 
+
+- Fairness and non-discrimination - Group and Individual Fairness, techniques to mitigate bias in training data and model outputs. Bias Detection and Mitigation and methods to identify and reduce unfair bias in AI systems.
+  - [The Fairness and ML Book](https://fairmlbook.org/)
+  - [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/abs/1908.09635)
+
+- Data Privacy considerations. General sound privacy and data protection regulation and standard guidelines apply here; collect and use only the necessary data for AI system functionality, protect sensitive data.
+  
 - Accountability and responsibility
 - Communicating AI decisions to stakeholders
-
-
-- https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
-- [Self-Assessment list for Trustworthy AI (ALTAI)](https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342) (direct PDF download)
 
 ### AI Governance Frameworks
 - Regulatory landscape and compliance requirements
@@ -105,16 +190,11 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 ## Trustworthy AI
 
-### Reliability and Robustness
-- Model performance evaluation - going beyond the [basic accuracy metrics](https://c3.ai/introduction-what-is-machine-learning/evaluating-model-performance/), such as precision, recall, F1-score, and AUC-ROC, to provide a holistic view of model performance
-  - [cross-validation and other techniques](https://www.markovml.com/blog/model-evaluation-metrics) to ensure the model's performance is consistent across different subsets of data
-- Error analysis and [debugging](https://www.markovml.com/blog/ml-model-debugging)
-  - [Confusion Matrix Analysis](https://en.wikipedia.org/wiki/Confusion_matrix) which examines the types of errors (false positives, false negatives) to understand where the model struggles2.
-  - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions.
-  - Error Patterns: Identifying systematic errors or biases in the model's predictions.
-  - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
-  -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions.
-- Handling edge cases and outliers
+More on this topic on the [principles for Trustworthy AI](./pages/principles.md) page.
+
+- https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+
 
 ### AI Safety
 - Risk assessment and mitigation strategies
@@ -122,33 +202,9 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Long-term AI safety considerations
   - All of AI 6 AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads. 
 
+<br/>
 
-## AI Security and Adversarial AI
-
-### AI Security Fundamentals
-- Threat modeling for AI systems
-  - [MLSecOps](https://mlsecops.com/)
-  - [Threat Modeling AI/ML Systems and Dependencies](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
-  - [Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications](https://arxiv.org/abs/2406.11007)
-
-- Common attack vectors and vulnerabilities
-
-### Adversarial Attacks
-- White Box & Black Box - https://deepgram.com/ai-glossary/adversarial-machine-learning
-- Types of adversarial attacks - https://viso.ai/deep-learning/adversarial-machine-learning/
-  - Evasion
-  - Poisoning, data poisoning - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions.
-  - Model Extraction
-- Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
-- Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
-  - Ability to create adversarial inputs for various types of AI models
-  - Ability to assess AI models' resilience against adversarial attacks
-- Defenses against adversarial attacks - understanding how techniques like adversarial training, defensive distillation and gradient masking/obfuscation work and are applied
-
-
-### AI System Hardening
-- Secure AI development practices
-- Model and data protection techniques
+# Auditing and Assessing
 
 ## AI Auditing Methodologies
 
@@ -166,6 +222,10 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Audit report writing
 - Communicating findings and recommendations
 - Follow-up and remediation tracking
+
+### AI Auditing Tools and Platforms
+- Overview of commercial and open-source auditing tools
+- Hands-on experience with selected tools
 
 ## Specialized AI Auditing Skills
 
@@ -186,29 +246,9 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Version control for AI models and datasets
 - Audit trail maintenance
 
-## Legal and Regulatory Compliance
-
-### AI-Specific Regulations
-- Need to have an understanding of the different AI regulations or frameworks (e.g., EU AI Act, NIST AI Risk Management Framework) referenced elsewhere in this document, in order to leverage them and understand which ones might apply in each specific audit scenario.
-- Sector-specific AI regulations, use cases and applications.There are many of those. Some relevant examples:
-  - [Financial Industry Regulatory Authority (FINRA) AI/ML Guidelines](https://www.finra.org/rules-guidance/key-topics/fintech/report/artificial-intelligence-in-the-securities-industry/ai-apps-in-the-industry). The notes to this document provide additional sector-specific links
-  - AI in credit scoring and fraud detection, with its own set of biases and risks
-  - Algorithmic trading and risk management
-  - [In HR and Hiring](https://www.eeoc.gov/laws/guidance/americans-disabilities-act-and-use-software-algorithms-and-artificial-intelligence)
-  - In Healthcare, with specializations such as AI in medical diagnosis and treatment planning and its plethora of accompanying ethical and data privacy considerations.
-  - Manufactoring, IoT, such as AI in predictive maintenance and quality control or safety considerations for AI-powered robotics
-
-### Data Protection and Privacy Laws
-- GDPR and other relevant data protection regulations
-- Privacy-preserving AI techniques
-  - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
 
 ## Practical Skills and Tools
-
-### AI Auditing Tools and Platforms
-- Overview of commercial and open-source auditing tools
-- Hands-on experience with selected tools
 
 ### Programming for AI Auditing
 - Basic Python for data analysis and model inspection
@@ -222,6 +262,9 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors. 
 
+- Communicating AI decisions to stakeholders
+
+
 ### Communication and Stakeholder Management
 - Explaining technical concepts to non-technical audiences, or mixed audiences composed of including data scientists, ethicists, and domain experts.
 - Communicating with stakeholders who may have varying levels of AI literacy and different concerns about AI/ML systems
@@ -229,26 +272,41 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - Sector-specific knowledge
 
 ### Critical & Ethical Decision Making
-- Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI without yielding to mental lazyness or AI authority syndrom
+- Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI without yielding to mental lazyness or AI authority syndrom.
+- Develop a healthy skepticism towards AI-generated insights and answers. This point, and the previous one, will most often require solid foundational skills plus specialized domain knowledge. 
 - Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
 - Balancing competing interests and priorities
 
-## Tools, Templates, Checklists
+<br/>
 
+# Tools, Templates, Checklists
+
+- [Self-Assessment list for Trustworthy AI (ALTAI)](https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342) (direct PDF download)
 - [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
 - [AI Ethics Policy Template](https://www.aiguardianapp.com/ai-ethics-policy-template)
 - [AI Ethics Toolkit](https://www.hum-dseg.org/ai-applied-ethics-toolkit)
 - [Assessment List for Trustworthy AI (ALTAI)](https://op.europa.eu/en/publication-detail/-/publication/73552fcd-f7c2-11ea-991b-01aa75ed71a1)
 - [NOREA Guiding Principles Trustworthy AI Investigations](https://www.norea.nl/uploads/bfile/a344c98a-e334-4cf8-87c4-1b45da3d9bc1)
 - [UK A Guide to ICO Audit Artificial Intelligence (AI) Audits](https://ico.org.uk/media/for-organisations/documents/4022651/a-guide-to-ai-audits.pdf)
+- [AI Incident Database](https://incidentdatabase.ai/)
+- [LatticeFlow's](https://latticeflow.ai/solutions/ai-assessments/) - for example involved in the [EU AI Act compliance assessment](https://opentools.ai/news/eu-ai-act-compliance-checker-reveals-tech-giants-weak-spots?utm_source=opentoolsai-newsletter&utm_medium=newsletter&utm_campaign=ai-compliance-shocker&_bhlid=6fb422971ae5f7227094d0d7914074df7eaf8b5c)
 
-### Github
 
-- [Trustworthy AI, AI+Security Papers](https://github.com/nuaa-nlp/TrustworthyAIPapers)
+## Github
+
+
 - [Toolkit for "TrustLLM: Trustworthiness in Large Language Models"](https://github.com/HowieHwong/TrustLLM)
 - [AuditNLG: Auditing Generative AI Language Modeling for Trustworthiness (Salesforce)](https://github.com/salesforce/AuditNLG)
 
-## Trainings
+<br/>
+
+# Regulatory
+
+- [OECD AI Policy Observatory](https://oecd.ai/en/) and its [AI Principles](https://oecd.ai/en/ai-principles)
+
+<br/>
+
+# Specialized Trainings
 
 - [ISACA](https://www.isaca.org/resources/artificial-intelligence)
 - [Theiia Auditing Artificial Intelligence (AI): A Hands-On Course for Internal Auditors](https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/)
@@ -257,15 +315,24 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
 - [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
 
+<br/>
 
-## Books, Papers
+# Other Books & Papers
 
+- [Trustworthy AI, AI+Security Papers](https://github.com/nuaa-nlp/TrustworthyAIPapers)
 - [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
 - [Towards a Business Case for AI Ethics](https://jyx.jyu.fi/bitstream/handle/123456789/93508/agbeseym.pdf?sequence=1&isAllowed=y) (direct PDF download). Also available as part of this Open Access Book, [Software Business](https://link.springer.com/book/10.1007/978-3-031-53227-6)
+- [The intersection of Responsible AI and ESG](https://www.csiro.au/-/media/D61/Responsible-AI/Alphinity/Responsible-AI-and-ESG.pdf)
+- [Artificial Intelligence Ethics, Governance and policy challenges - CEPS Task Force Report](https://cdn.ceps.eu/wp-content/uploads/2019/02/AI_TFR.pdf)
 
 
-## Vendor links
+<br/>
+
+
+# Some Vendor links
 
 - Azure - [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2)
 - AWS - https://aws.amazon.com/ai/generative-ai/security/
+- SGS - [Trustworthiness of AI](https://www.sgs.com/en/whitepapers/trustworthiness-of-ai-form)
+- SGS - [White Paper: Trustworthy AI, Privacy and Security](https://www.sgs.com/en/whitepapers/trustworthy-ai-privacy-and-security-in-ai-form)
 
