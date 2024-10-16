@@ -27,6 +27,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
     - [AI Security Fundamentals](#ai-security-fundamentals)
     - [Data Privacy and Security](#data-privacy-and-security-technical)
     - [AI Security and Adversarial AI](#ai-security-and-adversarial-ai)
+  - [Model Validation and Testing](#model-validation-and-testing)
   - [On Syntethic data](#on-synthetic-data)
 
 [Regulatory Track](#regulatory)
@@ -205,6 +206,12 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 - Associated risks and Privacy-preserving AI techniques
   - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
+## Model Validation and Testing
+
+- Testing for performance
+- Testing for reliability
+- Testing for compliance with expected/stated outcomes
+
 ## [Synthetic Data Considerations](./pages/synth_data.md)
 
 - Data Privacy and Synthetic Data
@@ -214,7 +221,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 Good overview and understanding of the main topics around Ethics and Governance and what Regulators, think-tanks and industry groups of interest are putting out that affects the evaluation and assessments of models, and also guides the auditor be aligned in terms of compliance and potential certification of AI & ML models. 
 
-Understand as well the societal and philosophical derivations of the technology, from obvious consideration of labor market impact, to HCI, etc.
+Understand as well the social, economical, ethical and philosophical derivations of the technology.
 
 - Accountability and responsibility
 
