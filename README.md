@@ -67,8 +67,8 @@ Get more than a passing familiarity with the underlying technology and main para
 - Types of ML and AI systems
   - Have at least a basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer
   - [Basic Algorithms](https://www.tableau.com/data-insights/ai/algorithms)
-  - How AI, ML and Deep Learning are related.
-  - Neural networks (FNN, RNN, CNN, LSTM, [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
+  - How AI, ML and Deep Learning are [related](./pages/ai_overview.md).
+  - Neural networks ([FNN, RNN, CNN, LSTM](./pages/neural_networks_overview.md), [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
 - Machine learning algorithms and techniques
 
 
@@ -104,12 +104,13 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
-- Algorithmic Transparency (level 1 of AI Transparency) - ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
+- Algorithmic Transparency - Algorithmic transparency is high on the agenda for social media regulation. As an auditor, ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
   - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
   - For Black box models, providing query access to the model without exposing internal implementation
   - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases
 - Interpretability of AI/ML models
 - [Differential privacy](https://arxiv.org/abs/1412.7584)
+- [Platform Observability](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/4_2_3) - this interesting paper seeks to go beyond Algorithmic Transparency to "_platform observability: a pragmatic and sociotechnical perspective aimed at securing structural, real-time access to the means of platform knowledge production_", applying the classic concept of Observability *as a pragmatic alternative to algorithm-centric models of platform transparency*. 
 
   As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
 
