@@ -80,7 +80,7 @@ However, despite its benefits, the generation and use of synthetic data must adh
 
 - What corrective actions are taken when biases or unfair patterns are identified in synthetic data?
 
-- Are there systems in place to track whether synthetic data leads to biased outcomes in downstream AI models?
+- Are there systems in place to track whether synthetic data leads to biased outcomes in downstream AI models? 
 
 - Can the organization provide an audit trail showing the complete lifecycle of the data, from its original form to its synthetic counterpart?
 

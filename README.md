@@ -4,17 +4,9 @@ This repository tries to outline a comprehensive programme for setting up an in-
 
 This takes inspiration from a large number of public papers (arxiv mostly) on the technical side of things, as well as document from regulators, think-tanks and other policy actors.
 
-I realize the term itself can be a bit laden and potentially a misnomer (or a [nonsense](https://philarchive.org/archive/FREMSOv1), even) which some vendors could be pushing in order to drive the hype to their favour or sell their services. In fact, all major vendors are pushing their capalities and assessment checklists.
-
-- **Lack of standard definition**. it can be said there is no unversally accepted definition of what TAI is, but regulators and research is converging on a specific set of principles and areas that I think offer a good enough definition.
-
-- **Oversimplification**: Trust is relational, context-dependent, and earned over time. Simply labeling an AI system as "trustworthy" doesn’t account for the deeper, more nuanced aspects of human trust or the need for ongoing scrutiny as AI evolves. It can also drive forward the perilous tendency to trust AI / ML outputs by default. 
-
-- **False attribution**: in the wake of the previous point, we might end up  attributing responsibilities to agents who cannot be held responsible, which poses interesting problems regarding accountability and liability. 
-
 ## Main structure
 
-One could think of structuring this in two main tracks, the Technical (which covers some basics and includes adjacent areas in Security) and the Regulatory, which would include as well the ethical, social and philosophical. To that I added a third section for AI auditors.
+One could think of structuring this in two main tracks, the Technical (which covers some basics and includes adjacent areas in Security) and the Regulatory, which would include as well the ethical, social and philosophical. A third section covers specific skills for AI auditors.
 
 ## ToC
 
@@ -32,7 +24,6 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 [Regulatory Track](#regulatory)
   - [Trustworthy AI](#trustworthy-ai)
-  - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
   - [AI-Specific Regulations](#ai-specific-regulations)
   - [Data Privacy Protection](#data-privacy-protection)
   - [Synthetic Data Considerations](#synthetic-data-considerations)
@@ -187,12 +178,14 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
 
 ## Trustworthy AI
 
-- https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+[On the idea of TAI](./pages/trustworthy_ai.md)
+
+-  [EU HLEG AI Guidelines](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
+- [China CAICT White Paper on TAI](http://www.caict.ac.cn/english/research/whitepapers/202110/P020211014399666967457.pdf)
 
 ## Legal and Regulatory Compliance
 
-## AI-Specific Regulations
-- Need to have an understanding of the different AI regulations or frameworks (e.g., EU AI Act, NIST AI Risk Management Framework) referenced elsewhere in this document, in order to leverage them and understand which ones might apply in each specific audit scenario.
+- Need to have an understanding of the different AI regulations or frameworks (e.g., [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence), [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)) referenced elsewhere in this document, in order to leverage them and understand which ones might apply in each specific audit scenario.
 - Sector-specific AI regulations, use cases and applications.There are many of those. Some relevant examples:
   - [Financial Industry Regulatory Authority (FINRA) AI/ML Guidelines](https://www.finra.org/rules-guidance/key-topics/fintech/report/artificial-intelligence-in-the-securities-industry/ai-apps-in-the-industry). The notes to this document provide additional sector-specific links
   - AI in credit scoring and fraud detection, with its own set of biases and risks
@@ -202,7 +195,7 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - Manufactoring, IoT, such as AI in predictive maintenance and quality control or safety considerations for AI-powered robotics
 
 ## Data Privacy Protection
-- GDPR, CCPA and other relevant data protection regulations
+- [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679), [CCPA](https://cppa.ca.gov/regulations/pdf/cppa_act.pdf) and other relevant data protection regulations
 - Associated risks and Privacy-preserving AI techniques
   - [Privacy Risks of General-Purpose AI Systems](https://arxiv.org/abs/2407.02027)
 
