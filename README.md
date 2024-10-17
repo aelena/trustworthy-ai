@@ -117,7 +117,14 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490)
   - [Making Sense of Machine Learning: A Review of Interpretation Techniques and Their Applications](https://www.mdpi.com/2076-3417/14/2/496)
 
-- [Differential privacy](https://arxiv.org/abs/1412.7584)
+- [Differential privacy](./pages/diff_priv.md)
+  - [OpenDP Framework](https://docs.opendp.org/en/stable/index.html)
+  - [differentialprivacy.org](https://differentialprivacy.org/), which also lists a number of books, tools, courses and stuff in the [resources page](https://differentialprivacy.org/resources/)
+  - [A friendly, non-technical introduction to differential privacy](https://desfontain.es/blog/friendly-intro-to-differential-privacy.html)
+  - [Hands-On Differential Privacy](https://www.oreilly.com/library/view/hands-on-differential-privacy/9781492097730/)
+  - [TensorFlow Privacy library](https://github.com/tensorflow/privacy), which can be used to train privacy-preserving ML models with minimal code changes to existing TensorFlow code
+  - [Opacus library](https://opacus.ai/), which can be used to train PyTorch models while enabling Differential Privacy.
+
 - [Platform Observability](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/4_2_3) - this interesting paper seeks to go beyond Algorithmic Transparency to "_platform observability: a pragmatic and sociotechnical perspective aimed at securing structural, real-time access to the means of platform knowledge production_", applying the classic concept of Observability *as a pragmatic alternative to algorithm-centric models of platform transparency*. 
 
   As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
