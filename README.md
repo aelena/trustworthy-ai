@@ -65,7 +65,7 @@ Get more than a passing familiarity with the underlying technology and main para
 - Introduction to AI and ML
   - [Basic concepts and terminology](https://medium.com/nlplanet/the-basic-concepts-and-terms-you-need-to-know-for-ai-and-ml-28eb07fd6c49)
 - Types of ML and AI systems
-  - Have at least a basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer
+  - Basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer etc
   - [Basic Algorithms](https://www.tableau.com/data-insights/ai/algorithms)
   - How AI, ML and Deep Learning are [related](./pages/ai_overview.md).
   - Neural networks ([FNN, RNN, CNN, LSTM](./pages/neural_networks_overview.md), [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
