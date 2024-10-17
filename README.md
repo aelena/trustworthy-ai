@@ -104,11 +104,19 @@ Understand all the stages of the AI & ML Development Lifecycle and what each sta
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
-- Algorithmic Transparency - Algorithmic transparency is high on the agenda for social media regulation. As an auditor, ensure information about the algorithms used in AI systems is clear. Apart from techniques mentioned above, such as SHAP, LIME, XAI techniques, basic lifecycle considerations apply, that is:   
+- [Algorithmic Transparency](https://en.wikipedia.org/wiki/Algorithmic_transparency) - Algorithmic transparency is high on the agenda for regulation (for example, [EU](https://algorithmic-transparency.ec.europa.eu/index_en), [EU Governance Framework for AT](https://www.europarl.europa.eu/RegData/etudes/STUD/2019/624262/EPRS_STU(2019)624262_EN.pdf), [UK](https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub)). As an auditor, ensure information about the algorithms used in AI systems is clear. Apart from techniques such as SHAP, LIME, XAI techniques (see above), basic lifecycle considerations apply, that is:   
   - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
   - For Black box models, providing query access to the model without exposing internal implementation
-  - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases
-- Interpretability of AI/ML models
+  - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases.
+
+  More references [here](./pages/algo_trans.md)
+
+- [Interpretability](https://www.managementsolutions.com/sites/default/files/minisite/static/22959b0f-b3da-47c8-9d5c-80ec3216552b/iax/pdf/explainable-artificial-intelligence-en-04.pdf) of AI/ML models
+  - [An Overview](https://www.blog.trainindata.com/machine-learning-interpretability/)
+  - [Distinguish](https://docs.aws.amazon.com/whitepapers/latest/model-explainability-aws-ai-ml/interpretability-versus-explainability.html) between Explainability and Interpretability
+  - [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490)
+  - [Making Sense of Machine Learning: A Review of Interpretation Techniques and Their Applications](https://www.mdpi.com/2076-3417/14/2/496)
+
 - [Differential privacy](https://arxiv.org/abs/1412.7584)
 - [Platform Observability](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/4_2_3) - this interesting paper seeks to go beyond Algorithmic Transparency to "_platform observability: a pragmatic and sociotechnical perspective aimed at securing structural, real-time access to the means of platform knowledge production_", applying the classic concept of Observability *as a pragmatic alternative to algorithm-centric models of platform transparency*. 
 
