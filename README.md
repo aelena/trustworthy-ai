@@ -65,24 +65,42 @@ Get more than a passing familiarity with the underlying technology and main para
 - Introduction to AI and ML
   - [Basic concepts and terminology](https://medium.com/nlplanet/the-basic-concepts-and-terms-you-need-to-know-for-ai-and-ml-28eb07fd6c49)
 - Types of ML and AI systems
-  - Basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, Transfer etc
+  - Basic understanding of the types of Machine Learning: Supervised, Unsupervised, Semi-supervised, and Reinforcement Learning, Self-supervised, Online, [Transfer](https://aws.amazon.com/what-is/transfer-learning/) etc ([ref](https://ifoadatascienceresearch.github.io/tutorial/comparison/), [ref](https://blogs.nvidia.com/blog/supervised-unsupervised-learning/))
   - [Basic Algorithms](https://www.tableau.com/data-insights/ai/algorithms)
   - How AI, ML and Deep Learning are [related](./pages/ai_overview.md).
   - Neural networks ([FNN, RNN, CNN, LSTM](./pages/neural_networks_overview.md), [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
-- Machine learning algorithms and techniques
+- Machine learning algorithms and techniques ([coursera](https://www.coursera.org/articles/machine-learning-algorithms), [comprehensive overview](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/), [a simple list](https://medium.com/@price_kj/list-of-all-machine-learning-ml-algorithms-7c839f8c0d73), [the wikipedia rabbit hole](https://en.wikipedia.org/wiki/Category:Machine_learning_algorithms))
 
 
 ## AI Development Lifecycle
 
 Understand all the stages of the AI & ML Development Lifecycle and what each stage entails. [More detail here](./pages/aiml_dev_lifecycle.md)
 
-- Data collection and preparation
-- Labeling and augmentation
+Refer to the [Tools, templates and Checklists section](#tools-templates-checklists) for guidance on these lifecycle stages.
+
+- Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
+- Data collection and preparation. Evaluate things like
+  - data quality
+  - completeness
+  - consistency
+  - relevance to the problem (hence need to have a clear scope and problem formulation in previous step)
+  - contextual appropriateness: Does the data represent the real-world context accurately? dimensions like time, location, scenario etc
+  - bias and variety
+  - how data has been sourced / procured, including provenance and dcumentation and trustworthiness of sources
+- [Labeling](https://www.altexsoft.com/blog/how-to-organize-data-labeling-for-machine-learning-approaches-and-tools/) and [augmentation](https://www.datacamp.com/tutorial/complete-guide-data-augmentation)
+  
+  Labeling refers to the process of associating each data point with the correct output or _ground truth_ where [ground truth](https://www.geeksforgeeks.org/what-is-ground-truth-in-machine-learning/) is defined as the target for training or validating the model with a labeled dataset. In plain words, this means that for example in a dataset of images of animals, each image must be labeled with the corresponding animal type. The importance of correct data labeling is obvious, since labeling that is  inconsistent and/or unaccurate will most likely lead to poor model performance or wrong or biased predictions. The quality of the labeling process is especially important when dealing with complex tasks like object detection, natural language processing, or medical diagnosis, where errors can have significant consequences. 
+
+  As for augmentation, different techniques exist that aim to increase the diversity and volume of the training dataset without actually collecting new data, since collecting a lot of labelled data is time-consuming and generally expensive. Augmentation helps address this issue by transforming the existing data in various ways to create new examples. For image data, this might involve rotating, flipping, or scaling the images, adjusting brightness, or adding noise. For text data, augmentation could include synonym replacement, word deletion, or paraphrasing. Synthetic data can also help here. This is particularly useful in in domains where data is scarce and/or expensive and/or sensitive to label, such as medical imaging or autonomous driving. Obviously, the challenge lies in ensuring that the transformations do not negatively affect data integrity. Both labeling and augmenting can be a time-consuming and expensive process for large datasets.
+
+  - how data has been cleaned, processed, improved ([A 2024 Survey of ETL tools](https://arxiv.org/pdf/2406.08335))
+  - [treatment of outliers](https://www.neuraldesigner.com/blog/effective-outlier-treatment-methods-machine-learning/)
+  - [normalization and scaling](https://www.geeksforgeeks.org/normalization-and-scaling/)
 - Model selection and training - Choose the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
 - Training phases
   - [Hyperparameter Tuning](https://arxiv.org/abs/2003.05689) : Adjust hyperparameters (e.g., learning rate, regularization factors) to optimize the model's performance. Techniques such as grid search, random search, or more advanced approaches like Bayesian optimization are often employed ([Hyperparameter Optimization For Compute Efficient Training](https://arxiv.org/abs/2306.08055), [Hyperparameters in Reinforcement Learning and How To Tune Them](https://arxiv.org/abs/2306.01324))
   - [Cross-Validation](./pages/cross_valid.md), to evaluate a model's performance and generalization ability. This allows to obtain a better estimate of a model's performance on previously unseen data compared to a classic train-test split. By testing the model on multiple subsets of data, cross-validation helps detect and prevent the classic issue of overfitting.
-- Performance metrics - what were the performance metrics for the AI system.
+- [Performance](https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide) [metrics](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/) - what were the performance metrics for the AI system.
   - [Metrics to evaluate ML algorithms](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
 - Bias and Fairness testing
   - [Managing bias and unfairness in data for decision support](https://link.springer.com/article/10.1007/s00778-021-00671-8)
@@ -380,7 +398,8 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [LatticeFlow's](https://latticeflow.ai/solutions/ai-assessments/) - for example involved in the [EU AI Act compliance assessment](https://opentools.ai/news/eu-ai-act-compliance-checker-reveals-tech-giants-weak-spots?utm_source=opentoolsai-newsletter&utm_medium=newsletter&utm_campaign=ai-compliance-shocker&_bhlid=6fb422971ae5f7227094d0d7914074df7eaf8b5c)
 - [Toolkit for "TrustLLM: Trustworthiness in Large Language Models"](https://github.com/HowieHwong/TrustLLM)
 - [AuditNLG: Auditing Generative AI Language Modeling for Trustworthiness (Salesforce)](https://github.com/salesforce/AuditNLG)
-
+- [HRIA (Human Rights Impact Assessment) Guidance and Template](https://www.humanrights.dk/files/media/document/A%20HRIA%20of%20Digital%20Activities%20-%20Introduction_ENG_accessible.pdf)
+- [AI Auditing Checklist for AI Auditing](https://www.edpb.europa.eu/system/files/2024-06/ai-auditing_checklist-for-ai-auditing-scores_edpb-spe-programme_en.pdf)
 
 <br/>
 
@@ -390,8 +409,8 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [Theiia Auditing Artificial Intelligence (AI): A Hands-On Course for Internal Auditors](https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/)
 - [Theiia Essentials for AI Auditing](https://www.theiia.org/en/products/learning-solutions/course/internal-auditing-in-the-age-of-artificial-intelligence/)
 - [Babl Courses](https://babl.ai/courses/)
-- [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
 - [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
+- [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
 
 <br/>
 
