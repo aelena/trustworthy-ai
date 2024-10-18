@@ -80,5 +80,11 @@ Citations:
 
 ## Other sources
 
+These are sources I think offer good overviews of what Cross Validation is and how to apply it.
+
+- [Scikit - Cross-validation: evaluating estimator performance](https://scikit-learn.org/stable/modules/cross_validation.html)
 - [Is K-fold cross validation the best model selection method for Machine Learning?](https://arxiv.org/abs/2401.16407)
+- [Azure - Configure training, validation, cross-validation, and test data in automated machine learning](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cross-validation-data-splits?view=azureml-api-1)
+- [The Ultimate Guide To Cross-Validation In Machine Learning](https://www.simplilearn.com/tutorials/machine-learning-tutorial/cross-validation)
+- [Cross-Validation in Machine Learning: How to Do It Right](https://neptune.ai/blog/cross-validation-in-machine-learning-how-to-do-it-right)
 

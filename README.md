@@ -28,6 +28,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
   - [Data Privacy Protection](#data-privacy-protection)
   - [Synthetic Data Considerations](#synthetic-data-considerations)
   - [Governance](#governance)
+    - [Organizational](#organizational)
     - [Ethical AI Principles](#ethical-ai-principles)
     - [Ethics Requirements](#ethics-requirements)
     - [AI Governance Frameworks](#ai-governance-frameworks)
@@ -76,6 +77,14 @@ Get more than a passing familiarity with the underlying technology and main para
 
 Understand all the stages of the AI & ML Development Lifecycle and what each stage entails. [More detail here](./pages/aiml_dev_lifecycle.md)
 
+In truth, it can be said that ML training has 4 phases, the first of which is checking whether the problem can be solved by non-ML means. As defined in [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/), therefore we can think of the following 4 basic phases:
+  - Phase 1. Before machine learning non-ML solutions can be used to solve the problem, and if they work fine, there may be no need to move to ML.
+  - Phase 2. check if simplest machine learning models do the job. things like logistic regression, gradient-boosted trees, and k-nearest neighbors can be  used to validate the problem framing and data.
+  - Phase 3. Optimizing simple models, with different objective functions, hyperparameter search, feature engineering, more data, and ensembles. 
+  - Phase 4. Complex models, if the previous options did not work as expected or we want to go deeper. Resorting to complex models is also a means of experimentation to try and improve model performance. 
+
+These are aspects that an auditor for Trustworthy AI should probably be looking at. 
+
 Refer to the [Tools, templates and Checklists section](#tools-templates-checklists) for guidance on these lifecycle stages.
 
 - Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
@@ -96,8 +105,9 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - how data has been cleaned, processed, improved ([A 2024 Survey of ETL tools](https://arxiv.org/pdf/2406.08335))
   - [treatment of outliers](https://www.neuraldesigner.com/blog/effective-outlier-treatment-methods-machine-learning/)
   - [normalization and scaling](https://www.geeksforgeeks.org/normalization-and-scaling/)
-- Model selection and training - Choose the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
-- Training phases
+- Model selection - model selection is about picking the best performing model, not about tuning it for its best performance, which is hyperparameter tuning and comes later. This is about choosing the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
+- Training and Training phases
+
   - [Hyperparameter Tuning](https://arxiv.org/abs/2003.05689) : Adjust hyperparameters (e.g., learning rate, regularization factors) to optimize the model's performance. Techniques such as grid search, random search, or more advanced approaches like Bayesian optimization are often employed ([Hyperparameter Optimization For Compute Efficient Training](https://arxiv.org/abs/2306.08055), [Hyperparameters in Reinforcement Learning and How To Tune Them](https://arxiv.org/abs/2306.01324))
   - [Cross-Validation](./pages/cross_valid.md), to evaluate a model's performance and generalization ability. This allows to obtain a better estimate of a model's performance on previously unseen data compared to a classic train-test split. By testing the model on multiple subsets of data, cross-validation helps detect and prevent the classic issue of overfitting.
 - [Performance](https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide) [metrics](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/) - what were the performance metrics for the AI system.
@@ -114,7 +124,10 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - LIME (Local Interpretable Model-agnostic Explanations)
     - [paper](https://arxiv.org/abs/1602.04938)
     - [paper with code](https://github.com/marcotcr/lime)
-- Deployment and monitoring
+- [Deployment and monitoring](https://configr.medium.com/ai-model-deployment-and-monitoring-f458a8a8c725) - a undeployed model is worthless, and an unmonitored one is a risk. There are a number of issues
+  - Conceptual drift - The underlying data distribution that the model was trained on can shift over time, leading to model performance degradation. As an auditor this is akin to fit for purpose over time and how this is controlled and accounted for, what strategies are in place?
+  - Quality drift - similarly, data might drift over time or, worse, production data is different to the data the model was trained on. As an auditor, you want to check this and get a sample of both sets of data, at least, to examine this.
+  - General monitoring - classic infra monitoring concerns, such as SLAs, infra failures, latencies, scalability etc.
 
 ## Transparency and Explainability
 
@@ -124,7 +137,12 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
 - [Algorithmic Transparency](https://en.wikipedia.org/wiki/Algorithmic_transparency) - Algorithmic transparency is high on the agenda for regulation (for example, [EU](https://algorithmic-transparency.ec.europa.eu/index_en), [EU Governance Framework for AT](https://www.europarl.europa.eu/RegData/etudes/STUD/2019/624262/EPRS_STU(2019)624262_EN.pdf), [UK](https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub)). As an auditor, ensure information about the algorithms used in AI systems is clear. Apart from techniques such as SHAP, LIME, XAI techniques (see above), basic lifecycle considerations apply, that is:   
   - Detailed records of algorithms used, decision criteria, data sources and preprocessing steps done, model architecture chosen and rationale and training procedures. Data lineage tools can support auditing this aspect of AI&ML models. 
-  - For Black box models, providing query access to the model without exposing internal implementation
+  - For Black box models, providing query access to the model without exposing internal implementation 
+    - [Interpreting Black-Box Models: A Review on Explainable Artificial Intelligence](https://link.springer.com/article/10.1007/s12559-023-10179-8) 
+    - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933) 
+    - [Interpretable machine learning: Fundamental principles and 10 grand challenges](https://arxiv.org/abs/2103.11251) 
+    - [Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://www.academia.edu/62024109/Peeking_Inside_the_Black_Box_A_Survey_on_Explainable_Artificial_Intelligence_XAI_) 
+    - [XAI Handbook: Towards a Unified Framework for Explainable AI](https://arxiv.org/abs/2105.06677)
   - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases.
 
   More references [here](./pages/algo_trans.md)
@@ -152,7 +170,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [cross-validation and other techniques](https://www.markovml.com/blog/model-evaluation-metrics) to ensure the model's performance is consistent across different subsets of data
 - Error analysis and [debugging](https://www.markovml.com/blog/ml-model-debugging)
   - [Confusion Matrix Analysis](https://en.wikipedia.org/wiki/Confusion_matrix) which examines the types of errors (false positives, false negatives) to understand where the model struggles2.
-  - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions.
+  - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions through different [techniques](https://www.aporia.com/learn/feature-importance/feature-importance-7-methods-and-a-quick-tutorial/). - [Comparison of feature importance measures as explanations for classification models](https://link.springer.com/article/10.1007/s42452-021-04148-9)
   - Error Patterns: Identifying systematic errors or biases in the model's predictions.
   - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
   -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions.
@@ -167,23 +185,26 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [MLSecOps](https://mlsecops.com/)
   - [Threat Modeling AI/ML Systems and Dependencies](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
   - [Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications](https://arxiv.org/abs/2406.11007)
+  - [Introducing Google’s Secure AI Framework](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/) - this page includes a summary of SAIF and examples for practitioners
 
-- Common attack vectors and vulnerabilities
+- Common attack vectors and vulnerabilities - [OWASP Machine Learning Security Top Ten](https://owasp.org/www-project-machine-learning-security-top-10/)
 
 ### Data Privacy and Security (technical)
 
 - Audit implementation of access controls, security measures, encryption techniques, and safeguards in place to protect data in AI/ML models. 
 - How do AI systems manage data
-- Anonymization techniques
-- Securing data pipelines to prevent unauthorized access or breaches.
+- [Anonymization techniques](https://www.privacydynamics.io/post/data-anonymization-in-ai-a-path-towards-ethical-machine-learning/)
+  - [Anonymizing Machine Learning Models](https://arxiv.org/pdf/2007.13086)
+  - [Towards Personal Data Identification and Anonymization using Machine Learning Techniques](https://www.researchgate.net/profile/Francesco-Di-Cerbo/publication/327315236_Towards_Personal_Data_Identification_and_Anonymization_Using_Machine_Learning_Techniques_ADBIS_2018_Short_Papers_and_Workshops_AIQA_BIGPMED_CSACDB_M2U_BigDataMAPS_ISTREND_DC_Budapest_Hungary_September/links/5cb9efab4585156cd7a46cfa/Towards-Personal-Data-Identification-and-Anonymization-Using-Machine-Learning-Techniques-ADBIS-2018-Short-Papers-and-Workshops-AIQA-BIGPMED-CSACDB-M2U-BigDataMAPS-ISTREND-DC-Budapest-Hungary.pdf)
+- [Securing the data pipeline](https://cloud.google.com/blog/topics/threat-intelligence/securing-ai-pipeline/) to prevent unauthorized access or breaches.
 
-### AI Security and Adversarial AI
+## AI Security and Adversarial AI
 
 ### Adversarial Attacks
-- White Box & Black Box - https://deepgram.com/ai-glossary/adversarial-machine-learning
-- Types of adversarial attacks - https://viso.ai/deep-learning/adversarial-machine-learning/
+- [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning) - 
+- [Types of adversarial attacks](https://viso.ai/deep-learning/adversarial-machine-learning/) - 
   - Evasion
-  - Poisoning, data poisoning - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions.
+  - [Poisoning, data poisoning](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML02_2023-Data_Poisoning_Attack) - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions. As an auditor, understand what type of attack this is and check the measures in place to prevent it. 
   - Model Extraction
 - Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
 - Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
@@ -216,6 +237,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 -  [EU HLEG AI Guidelines](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
 - [China CAICT White Paper on TAI](http://www.caict.ac.cn/english/research/whitepapers/202110/P020211014399666967457.pdf)
+ 
 
 ## Legal and Regulatory Compliance
 
@@ -250,6 +272,11 @@ Good overview and understanding of the main topics around Ethics and Governance 
 
 Understand as well the social, economical, ethical and philosophical derivations of the technology.
 
+### Organizational
+
+While not exactly regulatory, in this track, as an auditor you will want to check what AI Policy a given organization might / should have in place.
+
+- Organizational AI policies in place
 - Accountability and responsibility
 
 ### Ethical AI Principles
@@ -275,7 +302,7 @@ Basic guidance such as that provided by the [OECD AI Policy Observatory](https:/
   - [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence), a comprehensive first-of-its-kind regulation categorizing AI systems based on risk levels and imposing corresponding requirements
   - [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32016R0679)
   - [The AIGA AI Governance Framework](https://ai-governance.eu/)
-  - [Putting AI Ethics into Practice: The Hourglass Model of Organizational AI Governance](https://arxiv.org/abs/2206.00335) (paper)
+  - [Putting AI Ethics into Practice: The Hourglass Model of Organizational AI Governance](https://arxiv.org/abs/2206.00335)
   - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework), which focuses on managing risks associated with AI systems and rovides guidance on governance, mapping, measuring, and managing AI risks / [standard (PDF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
   - [OECD Principles on Artificial Intelligence](https://www.oecd.org/en/topics/policy-issues/artificial-intelligence.html), emphasizes human-centered values and fairness
   - [European Commission's Ethics Guidelines for Trustworthy AI](https://op.europa.eu/en/publication-detail/-/publication/d3988569-0434-11ea-8c1f-01aa75ed71a1), which is part of the EU's broader AI strategy
@@ -381,6 +408,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
 - Balancing competing interests and priorities
 
+
 <br/>
 
 # Additional 
@@ -388,6 +416,7 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 ## Tools, Templates, Checklists
 
 - [Self-Assessment list for Trustworthy AI (ALTAI)](https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342) (direct PDF download)
+- [Microsoft Responsible AI Standard v2 General Requirements](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4ZPmV)
 - [Data Ethics Canvas](https://theodi.org/news-and-events/blog/data-ethics-canvas/)
 - [AI Ethics Policy Template](https://www.aiguardianapp.com/ai-ethics-policy-template)
 - [AI Ethics Toolkit](https://www.hum-dseg.org/ai-applied-ethics-toolkit)
@@ -411,6 +440,10 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [Babl Courses](https://babl.ai/courses/)
 - [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
 - [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
+
+### Certifications
+
+- [IAPP Artificial Intelligence Governance Professional](https://iapp.org/certify/aigp/) - [IAPP](https://iapp.org/about/) defines itself as the professional home for privacy, AI governance and digital responsibility globally
 
 <br/>
 
