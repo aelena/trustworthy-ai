@@ -24,8 +24,9 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 [Regulatory Track](#regulatory)
   - [Trustworthy AI](#trustworthy-ai)
-  - [AI-Specific Regulations](#ai-specific-regulations)
+  - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
   - [Data Privacy Protection](#data-privacy-protection)
+  - [Model Validation and Testing](#model-validation-and-testing)
   - [Synthetic Data Considerations](#synthetic-data-considerations)
   - [Governance](#governance)
     - [Organizational](#organizational)
@@ -37,15 +38,21 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 [On Auditing and Assessments](#auditing-and-assessments)
   - [Audit Planning and Scoping](#audit-planning-and-scoping)
-  - [Risk management in AI Auditing](#risk-management-in-ai-auditing)
+    - [Risk management in AI Auditing](#risk-management-in-ai-auditing)
+    - [Audit Execution Techniques](#risk-management-in-ai-auditing)
+    - [AI Auditing Tools and Platforms](#ai-auditing-tools-and-platforms)
   - [Specialized AI Auditing Skills](#specialized-ai-auditing-skills)
-  - [Bias Detection and Mitigation](#bias-detection-and-mitigation)
-  - [Practical Skills and Tools](#practical-skills-and-tools)
+    - [Bias Detection and Mitigation](#bias-detection-and-mitigation)
+    - [AI Performance Metrics](#ai-performance-metrics)
+    - [AI Documentation and Traceability](#ai-documentation-and-traceability)
     - [Programming for AI Auditing](#programming-for-ai-auditing)
   - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
+    - [Critical & Ethical Decision Making](#critical--ethical-decision-making)
+    - [Communication and Stakeholder Management](#communication-and-stakeholder-management)
 
 [Additional Stuff](#additional)
 - [Tools, Templates, Checklists](#tools-templates-checklists)
+  - [Some Commercial Auditing Tools](#links-regarding-commercial-auditing-tools)
 - [Specialized Trainings](#specialized-trainings)
   - [Certifications](#certifications)
 - [Other Books & Papers](#other-books--papers)
@@ -75,6 +82,8 @@ flowchart TD
 <summary>Notice</summary>
 
 __Although we have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
+
+The ultimate goal is to build a BoK for a team of AI Auditors inside an organization, according to the definition of [Body of Knowledge](https://en.wikipedia.org/wiki/Body_of_knowledge#:~:text=August%202022,representation%20by%20any%20knowledge%20organization.) offered by Wikipedia.
 
 No affiliation links whatsoever.
 
@@ -112,6 +121,7 @@ These are aspects that an auditor for Trustworthy AI should probably be looking 
 
 Refer to the [Tools, templates and Checklists section](#tools-templates-checklists) for guidance on these lifecycle stages.
 
+- Understand the different roles involved, from data scientist to [AI product owner](https://www.datascience-pm.com/ai-product-owner/)
 - Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
 - Data collection and preparation. Evaluate things like
   - data quality
@@ -441,7 +451,7 @@ References covering these two topics available in the [dedicated page](./pages/s
 
 ## Specialized AI Auditing Skills
 
-## Bias Detection and Mitigation
+### Bias Detection and Mitigation
 - [Types of AI bias](./pages/types_ai_bias.md)
 - Bias measurement techniques
   - [De-biasing "bias" measurement](https://arxiv.org/abs/2205.05770)
@@ -486,7 +496,7 @@ References covering these two topics available in the [dedicated page](./pages/s
 
 <br/>
 
-## Practical Skills and Tools
+
 
 ### Programming for AI Auditing
 - Basic Python for data analysis and model inspection 
@@ -553,6 +563,7 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - [AI for auditing – First steps towards automation](https://lamarr-institute.org/blog/ali-ai-for-auditing/) - LAMARR is The Lamarr Institute for Machine Learning and Artificial Intelligence
 - [Introducing Fiddler Auditor: Evaluate the Robustness of LLMs and NLP Models](https://www.fiddler.ai/blog/introducing-fiddler-auditor-evaluate-the-robustness-of-llms-and-nlp-models)
 - [AI Security Tools: The Open-Source Toolkit](https://www.wiz.io/academy/ai-security-tools)
+- [ISACA Policy Template Library Toolkit](https://store.isaca.org/s/store#/store/browse/detail/a2S4w000008L3V9EAK)
 
 </details>
 
@@ -560,16 +571,24 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 
 ## Specialized Trainings
 
-- [ISACA](https://www.isaca.org/resources/artificial-intelligence)
+- [ISACA](https://www.isaca.org/resources/artificial-intelligence) - and this for [AI Auditors](https://www.isaca.org/resources/artificial-intelligence#4)
 - [Theiia Auditing Artificial Intelligence (AI): A Hands-On Course for Internal Auditors](https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/)
 - [Theiia Essentials for AI Auditing](https://www.theiia.org/en/products/learning-solutions/course/internal-auditing-in-the-age-of-artificial-intelligence/)
 - [Babl Courses](https://babl.ai/courses/)
 - [Coursera Responsible Generative AI Specialization](https://www.coursera.org/specializations/responsible-generative-ai)
 - [Trustworthy Generative AI Coursera](https://www.coursera.org/learn/trustworthy-generative-ai)
 
+These two courses are not specifically related to auditing but are interesting both from an advisory capability for clients point of view, as well as to build internal capability.
+
+- [MIT AI Strategy and Leadership Program](https://executive-ed.xpro.mit.edu/ai-strategy-and-leadership)
+- [MIT Designing and Building AI Products and Services](https://xpro.mit.edu/courses/course-v1:xPRO+AIPSx+R1/)
+
 ### Certifications
 
 - [IAPP Artificial Intelligence Governance Professional](https://iapp.org/certify/aigp/) - [IAPP](https://iapp.org/about/) defines itself as the professional home for privacy, AI governance and digital responsibility globally
+- [ISO/IEC 42001 Lead Auditor](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-lead-auditor)
+- [UL Certified Artificial Intelligence Professional](https://www.ul.com/sis/training/ul-certified-artificial-intelligence-professional)
+- [EITCA](https://eitca.org/eitca-ai-artificial-intelligence-academy/)
 
 <br/>
 
