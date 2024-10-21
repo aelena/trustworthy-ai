@@ -53,7 +53,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 <br/>
 
-__This document is necessarily work in progress and does not intend to be a final one stop shop__
+__Although we have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
 
 <br/>
 
