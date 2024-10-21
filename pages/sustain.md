@@ -29,7 +29,6 @@ There are two key topics in this dimension for the AI model auditor.
   - [Towards energy-efficient Deep Learning: An overview of energy-efficient approaches along the Deep Learning Lifecycle](https://arxiv.org/pdf/2303.01980) - Examines DLLCE, deep learning lifecycle efficiency and life cycle recognition efficiency.
   - [New universal sustainability metrics to assess edge intelligence](https://www.sciencedirect.com/science/article/pii/S2210537921000718)
   - [Towards a Methodology and Framework for AI Sustainability Metrics](https://dl.acm.org/doi/abs/10.1145/3604930.3605715) - (open access)
-  - []
 
 <br/>
 

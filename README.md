@@ -366,16 +366,15 @@ There are two key topics in this dimension for the AI model auditor.
 References covering these two topics available in the [dedicated page](./pages/sustain.md). 
 
 
-
-
 <br/>
 
 
 # Auditing and Assessments
 
 ## Audit Planning and Scoping
+
 - Defining audit objectives and scope
-- Developing audit criteria and checklists
+- Developing audit criteria and checklists - you probably want to have a fixed checklist covering all common generalities in AI model audit scenarios, and then additional checklist based on the particular domain.
 
 ### Risk management in AI Auditing
 
@@ -387,14 +386,14 @@ References covering these two topics available in the [dedicated page](./pages/s
   - [Bias Risk Template](https://ai.bsa.org/wp-content/uploads/2021/06/2021bsaaibiasframework.pdf)
 
 ### Audit Execution Techniques
-- Data sampling and analysis
-- Model evaluation and testing
-- Documentation review and stakeholder interviews
+- Data sampling and analysis - examine subsets of both training and test data to assess potential issues with bias, quality, representativeness, protection concerns etc. 
+- Data lineage and provenance, integrity. 
+- Model evaluation and testing. 
+  - Use techniques like LIME or SHAP to explain model predictions, covered elsewhere in this repository. 
+  - Stress test model with adversarial examples or edge cases.
+  - Feature importance and decision boundaries.
+- Source code and model architecture for errors or vulnerabilities.
 
-### Reporting and Remediation
-- Audit report writing
-- Communicating findings and recommendations
-- Follow-up and remediation tracking
 
 ### AI Auditing Tools and Platforms
 - Overview of commercial and open-source auditing tools - [The Right Tool for the Job: Open-Source Auditing Tools in Machine Learning](https://arxiv.org/abs/2206.10613) - see the [tools](#tools-templates-checklists) section below.
@@ -416,8 +415,16 @@ References covering these two topics available in the [dedicated page](./pages/s
 - Continuous monitoring of AI systems
 
 ### AI Documentation and Traceability
-- Model cards and datasheets
-- Version control for AI models and datasets
+
+- Documentation review and stakeholder interviews
+- Model cards and datasheets - 
+  - [Model cards](https://huggingface.co/blog/model-cards) and datasheets- This page is particularly useful as it links to [this related page](https://huggingface.co/docs/hub/model-card-landscape-analysis) that contains references to templates and guidelines for [datasheets](https://www.fatml.org/media/documents/datasheets_for_datasets.pdf) and a [repo with plenty of examples](https://github.com/ivylee/model-cards-and-datasheets). Some of the more relevant links therein are:
+
+    - [A Guide for Writing Data Statements for NLP Models](https://techpolicylab.uw.edu/wp-content/uploads/2021/11/Data_Statements_Guide_V2.pdf)
+    - [Reusable Templates and Guides For Documenting Datasets and Models for Natural Language Processing and Generation](https://huggingface.co/papers/2108.07374)
+    - [Towards Accountability for Machine Learning Datasets: Practices from Software Engineering and Infrastructure](https://dl.acm.org/doi/pdf/10.1145/3442188.3445918)
+    - [Data Cards playbook](https://github.com/PAIR-code/datacardsplaybook/) - [(paper)](Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI)
+- [Version control for AI models and datasets](https://neptune.ai/blog/version-control-for-ml-models) - version control is an idea that should not need selling.
 - Audit trail maintenance
 
 
