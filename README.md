@@ -358,14 +358,16 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 ### Sustainability Considerations
 
-- [Towards Sustainability of AI – Identifying Design Patterns for Sustainable Machine Learning Development](https://www.researchgate.net/publication/384071507_Towards_Sustainability_of_AI_-_Identifying_Design_Patterns_for_Sustainable_Machine_Learning_Development/link/66e95304dde50b3258789769/download)
-- [Towards Sustainable Artificial Intelligence: An Overview of Environmental Protection Uses and Issues](https://arxiv.org/pdf/2212.11738)
-- [A Survey on AI Sustainability: Emerging Trends on Learning Algorithms and Research Challenges](https://arxiv.org/abs/2205.03824)
-- [Broadening the perspective for sustainable AI: Sustainability criteria and indicators for Artificial Intelligence systems](https://arxiv.org/pdf/2306.13686)
-- [Sustainable AI: Environmental Implications, Challenges and Opportunities](https://www.researchgate.net/publication/355843251_Sustainable_AI_Environmental_Implications_Challenges_and_Opportunities)
-- [Artificial intelligence - driven sustainable development: Examining organizational, technical, and processing approaches to achieving global goals](https://www.diva-portal.org/smash/get/diva2:1807287/FULLTEXT01.pdf)
-- [Sustain Magazine](https://algorithmwatch.org/en/wp-content/uploads/2022/06/SustAIn_Magazine_2022_EN.pdf)
-- [Efficiency is Not Enough: A Critical Perspective of Environmentally Sustainable AI](https://arxiv.org/abs/2309.02065)
+There are two key topics in this dimension for the AI model auditor.
+
+- Understand the sustainability concerns and trends around AI & ML models.
+- Understand tools and techniques to measure and assess the sustainability impact of AI models.
+
+References covering these two topics available in the [dedicated page](./pages/sustain.md). 
+
+
+
+
 <br/>
 
 
@@ -378,6 +380,11 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 ### Risk management in AI Auditing
 
 - Identifying, assessing, and mitigating risks specific to AI models
+
+  - [Identifying and Mitigating the Security Risks of Generative AI](https://www.researchgate.net/publication/373487947_Identifying_and_Mitigating_the_Security_Risks_of_Generative_AI)
+  - [A Formal Framework for Assessing and Mitigating Emergent Security Risks in Generative AI Models](https://www.arxiv.org/abs/2410.13897)
+  - [(Berkeley) Guidance for the Development of AI Risk and Impact Assessments](https://cltc.berkeley.edu/wp-content/uploads/2021/08/AI_Risk_Impact_Assessments.pdf)
+  - [Bias Risk Template](https://ai.bsa.org/wp-content/uploads/2021/06/2021bsaaibiasframework.pdf)
 
 ### Audit Execution Techniques
 - Data sampling and analysis
