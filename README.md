@@ -96,15 +96,12 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - contextual appropriateness: Does the data represent the real-world context accurately? dimensions like time, location, scenario etc
   - bias and variety
   - how data has been sourced / procured, including provenance and dcumentation and trustworthiness of sources
-- [Labeling](https://www.altexsoft.com/blog/how-to-organize-data-labeling-for-machine-learning-approaches-and-tools/) and [augmentation](https://www.datacamp.com/tutorial/complete-guide-data-augmentation)
-  
-  Labeling refers to the process of associating each data point with the correct output or _ground truth_ where [ground truth](https://www.geeksforgeeks.org/what-is-ground-truth-in-machine-learning/) is defined as the target for training or validating the model with a labeled dataset. In plain words, this means that for example in a dataset of images of animals, each image must be labeled with the corresponding animal type. The importance of correct data labeling is obvious, since labeling that is  inconsistent and/or unaccurate will most likely lead to poor model performance or wrong or biased predictions. The quality of the labeling process is especially important when dealing with complex tasks like object detection, natural language processing, or medical diagnosis, where errors can have significant consequences. 
-
-  As for augmentation, different techniques exist that aim to increase the diversity and volume of the training dataset without actually collecting new data, since collecting a lot of labelled data is time-consuming and generally expensive. Augmentation helps address this issue by transforming the existing data in various ways to create new examples. For image data, this might involve rotating, flipping, or scaling the images, adjusting brightness, or adding noise. For text data, augmentation could include synonym replacement, word deletion, or paraphrasing. Synthetic data can also help here. This is particularly useful in in domains where data is scarce and/or expensive and/or sensitive to label, such as medical imaging or autonomous driving. Obviously, the challenge lies in ensuring that the transformations do not negatively affect data integrity. Both labeling and augmenting can be a time-consuming and expensive process for large datasets.
+- [Labeling and augmentation](./pages/label_aug.md)
 
   - how data has been cleaned, processed, improved ([A 2024 Survey of ETL tools](https://arxiv.org/pdf/2406.08335))
   - [treatment of outliers](https://www.neuraldesigner.com/blog/effective-outlier-treatment-methods-machine-learning/)
   - [normalization and scaling](https://www.geeksforgeeks.org/normalization-and-scaling/)
+  
 - Model selection - model selection is about picking the best performing model, not about tuning it for its best performance, which is hyperparameter tuning and comes later. This is about choosing the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
 - Training and Training phases
 
