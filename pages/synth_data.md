@@ -94,7 +94,9 @@ However, despite its benefits, the generation and use of synthetic data must adh
 # References and Links
 
   - [Privacy and Synthetic Datasets](https://law.stanford.edu/wp-content/uploads/2019/01/Bellovin_20190129.pdf)
-  - [(Singapore PDPC) - Proposed Guide on Synthetic Data Generation](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/other-guides/proposed-guide-on-synthetic-data-generation.pdf) 
   - [A Unified Framework for Quantifying Privacy Risk in Synthetic Data](https://petsymposium.org/popets/2023/popets-2023-0055.pdf)
   - [European Data Protection Supervisor on Synthetic data](https://www.edps.europa.eu/press-publications/publications/techsonar/synthetic-data_en)
   - [Exploring Synthetic Data Validation – Privacy, Utility and Fidelity](https://ico.org.uk/media/for-organisations/documents/4025484/sythetic-data-roundtable-202306.pdf)
+  - [(UN) Recommendations on the Use of Synthetic Data to Train AI Models](https://collections.unu.edu/eserv/UNU:9480/Use-of-Synthetic-Data-to-Train-AI-Models.pdf)
+  - [(Singapore PDPC) - Proposed Guide on Synthetic Data Generation](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/other-guides/proposed-guide-on-synthetic-data-generation.pdf) 
+ 

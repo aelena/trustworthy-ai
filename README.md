@@ -101,7 +101,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - how data has been cleaned, processed, improved ([A 2024 Survey of ETL tools](https://arxiv.org/pdf/2406.08335))
   - [treatment of outliers](https://www.neuraldesigner.com/blog/effective-outlier-treatment-methods-machine-learning/)
   - [normalization and scaling](https://www.geeksforgeeks.org/normalization-and-scaling/)
-  
+
 - Model selection - model selection is about picking the best performing model, not about tuning it for its best performance, which is hyperparameter tuning and comes later. This is about choosing the appropriate algorithm(s) based on the nature of the problem (e.g., classification, regression, clustering). This may involve selecting traditional machine learning models or deep learning architectures, depending on complexity and scale.
 - Training and Training phases
 
@@ -170,8 +170,8 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions through different [techniques](https://www.aporia.com/learn/feature-importance/feature-importance-7-methods-and-a-quick-tutorial/). - [Comparison of feature importance measures as explanations for classification models](https://link.springer.com/article/10.1007/s42452-021-04148-9)
   - Error Patterns: Identifying systematic errors or biases in the model's predictions.
   - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
-  -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions.
-- Handling edge cases and outliers
+  -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions
+- Handling edge cases and outliers, something that is also related to red teaming models and adversarial assessments
 
 
 
@@ -238,10 +238,21 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 ## On Synthetic data
 
-- Understand the growing relevante of synthetic data
-- Concerns around Synthetic Data Generation and Security
-- Presence of Bias in Synthetic Data
-- Validation and Testing with Synthetic Data 
+Synthetic data is a field that's [evolving fast](https://www.researchgate.net/publication/383910617_Advancements_in_Synthetic_Data_Generation_A_Comprehensive_Exploration_of_Generative_Models_Privacy-Preserving_Techniques_and_Real-World_Applications_Across_Industries) and attracting interest from multiple industries and regulators. It offers [interesting use cases](https://www.researchgate.net/publication/357007527_Synthetic_data_use_exploring_use_cases_to_optimise_data_utility) in the training of ML & AI models, offering diverse and controlled datasets (ideally) that enhance model performance while minimizing privacy risks, reducing undesirable biases and in some cases, where socially desirable, injecting appropriate biases to reduce inequities. We explore more links on this topic [later in this document](#synthetic-data-considerations), from a governance point of view. However, from a more technical perspective, an AI auditor should be familiar with the following:
+
+- Understand the growing relevance of synthetic data and
+  - applicability for addressing data deficits and representation concerns
+  - privacy protection and bias or imbalance
+  - economic considerations, where synthetic data can be cheaper that real world data collection
+  - compliance reasons
+- Concerns around Synthetic Data Generation and Security. Complementing the previous pros, there are cons around the use of synthetic data:
+  - data quality issues leading to inaccurate or less reliable models
+  - risks around reverse engineering, hence differential privacy, which, in principle, offers a mathematically robust solution to generate synthetic data that reliably retains thethe statistical characteristics of the original while protecting privacy. Nonetheless, a key concern remains: how can we guarantee that synthetic data cannot be reversed, potentially revealing sensitive information? This includes IP risks too
+  - [data pollution/contamination](https://arxiv.org/abs/2405.09597): As more synthetic data is used, it becomes harder to separate synthetic from real data and identify sources of bias, or models could get what one could call [mad cows disease for AI models](https://arxiv.org/abs/2307.01850)
+- Presence of Bias in Synthetic Data, including bias propagation - [How to Validate the Quality of Your Synthetic Data](https://towardsdatascience.com/how-to-validate-the-quality-of-your-synthetic-data-34503eba6da)
+- [Validation](https://arxiv.org/abs/2310.16052) and Testing with Synthetic Data 
+
+More [here](#on-synthetic-data)
 
 <br/>
 
