@@ -144,6 +144,10 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
     - [Interpretable machine learning: Fundamental principles and 10 grand challenges](https://arxiv.org/abs/2103.11251) 
     - [Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://www.academia.edu/62024109/Peeking_Inside_the_Black_Box_A_Survey_on_Explainable_Artificial_Intelligence_XAI_) 
     - [XAI Handbook: Towards a Unified Framework for Explainable AI](https://arxiv.org/abs/2105.06677)
+    - [A Comprehensive Taxonomy for Explainable Artificial Intelligence: A Systematic Survey of Surveys on Methods and Concepts](https://arxiv.org/abs/2105.07190)
+    - [A Review of Taxonomies of Explainable Artificial Intelligence (XAI) Methods](https://dl.acm.org/doi/pdf/10.1145/3531146.3534639)
+    - [Explainable artificial intelligence: an analytical review](https://www.semanticscholar.org/paper/Explainable-artificial-intelligence%3A-an-analytical-Angelov-Soares/0ca9a5ef7695fdaa65325761164c70e56739a902)
+    - [Explainable AI: A Review of Machine Learning Interpretability Methods](https://www.semanticscholar.org/reader/f156ecbbb9243522275490d698c6825f4d2e01af)
   - Transparency reports including regular updates on changes to AI systems and disclosure of known limitations or biases.
 
   More references [here](./pages/algo_trans.md)
@@ -460,7 +464,7 @@ References covering these two topics available in the [dedicated page](./pages/s
 ## Practical Skills and Tools
 
 ### Programming for AI Auditing
-- Basic Python for data analysis and model inspection
+- Basic Python for data analysis and model inspection 
 - Using libraries for fairness and explainability (such as [AI Fairness 360](https://aif360.res.ibm.com/) ([paper](https://arxiv.org/abs/1810.01943)) or SHAP)
 
 <br/>
@@ -556,4 +560,3 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - AWS - https://aws.amazon.com/ai/generative-ai/security/
 - SGS - [Trustworthiness of AI](https://www.sgs.com/en/whitepapers/trustworthiness-of-ai-form)
 - SGS - [White Paper: Trustworthy AI, Privacy and Security](https://www.sgs.com/en/whitepapers/trustworthy-ai-privacy-and-security-in-ai-form)
-
