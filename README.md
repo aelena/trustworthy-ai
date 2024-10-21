@@ -10,7 +10,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 ## ToC
 
-[Technical Track](#technical-track)
+### [Technical Track](#technical-track)
   - [AI / ML Fundamentals](#ai-and-ml-fundamentals)
   - [AI Development Lifecycle](#ai-development-lifecycle)
   - [Transparency and Explainability](#transparency-and-explainability)
@@ -22,7 +22,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
   - [Model Validation and Testing](#model-validation-and-testing)
   - [On Syntethic data](#on-synthetic-data)
 
-[Regulatory Track](#regulatory)
+### [Regulatory Track](#regulatory)
   - [Trustworthy AI](#trustworthy-ai)
   - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
   - [Data Privacy Protection](#data-privacy-protection)
@@ -36,7 +36,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
     - [AI Safety](#ai-safety)
     - [Sustainability Considerations](#sustainability-considerations)
 
-[On Auditing and Assessments](#auditing-and-assessments)
+### [On Auditing and Assessments](#auditing-and-assessments)
   - [Audit Planning and Scoping](#audit-planning-and-scoping)
     - [Risk management in AI Auditing](#risk-management-in-ai-auditing)
     - [Audit Execution Techniques](#risk-management-in-ai-auditing)
@@ -50,7 +50,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
     - [Critical & Ethical Decision Making](#critical--ethical-decision-making)
     - [Communication and Stakeholder Management](#communication-and-stakeholder-management)
 
-[Additional Stuff](#additional)
+### [Additional Stuff](#additional)
 - [Tools, Templates, Checklists](#tools-templates-checklists)
   - [Some Commercial Auditing Tools](#links-regarding-commercial-auditing-tools)
 - [Specialized Trainings](#specialized-trainings)
@@ -59,6 +59,8 @@ One could think of structuring this in two main tracks, the Technical (which cov
 - [Vendor links](#vendor-links)
 
 <br/>
+
+## Goal
 
 ```mermaid
 flowchart TD
@@ -78,17 +80,20 @@ flowchart TD
 
 <br/>
 
-<details>
-<summary>Notice</summary>
 
-__Although we have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
+<details>
+
+<summary>Disclaimer</summary>
+
+__Although I have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
 
 The ultimate goal is to build a BoK for a team of AI Auditors inside an organization, according to the definition of [Body of Knowledge](https://en.wikipedia.org/wiki/Body_of_knowledge#:~:text=August%202022,representation%20by%20any%20knowledge%20organization.) offered by Wikipedia.
 
-No affiliation links whatsoever.
+__No affiliation links whatsoever__.
 
 </details>
 
+<br/>
 <br/>
 
 # Technical Track
