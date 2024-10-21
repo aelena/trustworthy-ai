@@ -42,12 +42,12 @@ One could think of structuring this in two main tracks, the Technical (which cov
   - [Bias Detection and Mitigation](#bias-detection-and-mitigation)
   - [Practical Skills and Tools](#practical-skills-and-tools)
     - [Programming for AI Auditing](#programming-for-ai-auditing)
-    - [Visualization and Reporting](#visualization-and-reporting)
   - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
 
 [Additional Stuff](#additional)
 - [Tools, Templates, Checklists](#tools-templates-checklists)
 - [Specialized Trainings](#specialized-trainings)
+  - [Certifications](#certifications)
 - [Other Books & Papers](#other-books--papers)
 - [Vendor links](#vendor-links)
 
@@ -214,8 +214,27 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 
 ### AI System Hardening
-- Secure AI development practices
+- Secure AI development practices 
+  - [NIST Secure Software Development Practices for GenAI](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf)
+  - [UK Guidelines for secure AI system development](https://www.ncsc.gov.uk/files/Guidelines-for-secure-AI-system-development.pdf)
+- [Red teaming](https://arxiv.org/abs/2404.00629) - AI/ML Red Teaming is a structured security testing approach designed to identify vulnerabilities, weaknesses, and potential risks in artificial intelligence and machine learning systems before they can be exploited by malicious actors. This practice involves simulating real-world attacks on AI models to assess their resilience and improve their security posture. As an AI / ML Auditor it is important to have tools and understand how vulnerabilities, weaknesses and hidden flaws can be detected, not only for regulatory compliance but also for mere [risk mitigation](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf). Similarly, red teaming can help ensure that AI models adhere to ethical standards and societal expectations without compromising their effectiveness (ethical alignment). Red teaming is essential to improve the resiliency of models against unexpected or adversarial input, which in turn, possitively affects the previous aspects mentioned. 
+  - [Red Teaming Language Models with Language Models](https://arxiv.org/abs/2202.03286)
+  - [Learning diverse attacks on large language models for robust red-teaming and safety tuning](https://arxiv.org/abs/2405.18540)
+  - [Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned](https://arxiv.org/abs/2209.07858)
+  - [Exploring Straightforward Conversational Red-Teaming](https://arxiv.org/abs/2409.04822)
+  - [AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784)
+  - [SocioTechnical Approach to Red Teaming Language Models](https://arxiv.org/abs/2406.11757)
+  - [Red-Teaming for Generative AI, Silver Bullet or Security Theater](https://arxiv.org/pdf/2401.15897)
+
+  **Vendor links**
+    - [(Microsoft) Planning red teaming for large language models (LLMs) and their applications](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
+    - [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
+  - [(Lakera) Red Teaming LLM's ](https://www.lakera.ai/blog/ai-red-teaming)
+  - [(Google) AI Red Team report](https://services.google.com/fh/files/blogs/google_ai_red_team_digital_final.pdf) - [site](https://blog.google/technology/safety-security/googles-ai-red-team-the-ethical-hackers-making-ai-safer/)
+
+
 - Model and data protection techniques
+  - [Three Challenges to Secure AI Systems in the Context of AI Regulations](https://www.researchgate.net/publication/380015990_Three_challenges_to_secure_AI_systems_in_the_context_of_AI_regulations)
 
 
 <br/>
@@ -261,16 +280,18 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 - Testing for reliability
 - Testing for compliance with expected/stated outcomes
 
-## [Synthetic Data Considerations](./pages/synth_data.md)
+## Synthetic Data Considerations
 
-- Data Privacy and Synthetic Data
-- Ethical and Regulatory Compliance in Synthetic Data Usage
+- [Data Privacy and Synthetic Data](./pages/synth_data.md)
+- Ethical and Regulatory Compliance in Synthetic Data Usage 
+  - [Ethical Challenges of Using Synthetic Data](https://ojs.aaai.org/index.php/AAAI-SS/article/download/27490/27263/31541)
+  - [Synthetic Data in AI: Challenges, Applications, and Ethical Implications](https://arxiv.org/pdf/2401.01629v1)
 
 ## Governance
 
 Good overview and understanding of the main topics around Ethics and Governance and what Regulators, think-tanks and industry groups of interest are putting out that affects the evaluation and assessments of models, and also guides the auditor be aligned in terms of compliance and potential certification of AI & ML models. 
 
-Understand as well the social, economical, ethical and philosophical derivations of the technology.
+Understand as well the social, economical, ethical and [philosophical](https://intelligence.org/files/EthicsofAI.pdf) derivations of the technology.
 
 ### Organizational
 
@@ -336,7 +357,6 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 ## Audit Planning and Scoping
 - Defining audit objectives and scope
-- Risk assessment for AI systems
 - Developing audit criteria and checklists
 
 ### Risk management in AI Auditing
@@ -354,7 +374,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Follow-up and remediation tracking
 
 ### AI Auditing Tools and Platforms
-- Overview of commercial and open-source auditing tools
+- Overview of commercial and open-source auditing tools - [The Right Tool for the Job: Open-Source Auditing Tools in Machine Learning](https://arxiv.org/abs/2206.10613) - see the [tools](#tools-templates-checklists) section below.
 - Hands-on experience with selected tools
 
 
@@ -385,28 +405,27 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Basic Python for data analysis and model inspection
 - Using libraries for fairness and explainability (such as [AI Fairness 360](https://aif360.res.ibm.com/) ([paper](https://arxiv.org/abs/1810.01943)) or SHAP)
 
-### Visualization and Reporting
-- Data visualization techniques for AI audit findings
-- Creating effective audit reports and dashboards
+
 
 ## Soft Skills for AI Auditors
 
-Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors. 
-
-- Communicating AI decisions to stakeholders
-
-
-### Communication and Stakeholder Management
-- Explaining technical concepts to non-technical audiences, or mixed audiences composed of including data scientists, ethicists, and domain experts.
-- Communicating with stakeholders who may have varying levels of AI literacy and different concerns about AI/ML systems
-- Negotiation and conflict resolution in audit scenarios
-- Sector-specific knowledge
+Many Soft Skills for AI Auditors overlap with those needed in strategy consulting, project management, and risk management, especially in high-stakes settings and/or C-levels. One thing for sure is AI auditors need to stay up-to-date with the latest AI technologies, methodologies, and regulatory changes, whereas it might not be the case in more traditional industries or sectors, but apart from that these below are probably standard skills, not specific to AI & ML models auditors.
 
 ### Critical & Ethical Decision Making
+
+Dedicated literature and papers on the different dimensions of [AI ethics](https://www.nature.com/articles/s41599-020-0501-9) has exploded since 2016 as shown by [google trends](https://trends.google.es/trends/explore?date=all&q=AI%20ethics). A quick search online shows that everybody has put out their AI Ethics document, probably everyone's rehashing everyone else's and/or creating that through AI. 
+
 - Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI without yielding to mental lazyness or AI authority syndrom.
 - Develop a healthy skepticism towards AI-generated insights and answers. This point, and the previous one, will most often require solid foundational skills plus specialized domain knowledge. 
 - Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
-- Balancing competing interests and priorities
+
+
+### Communication and Stakeholder Management
+
+- Explaining technical concepts to non-technical audiences, or mixed audiences composed of including data scientists, ethicists, and domain experts
+- Communicating with stakeholders who may have varying levels of AI literacy and different concerns about AI/ML systems. Communicating AI decisions to stakeholders
+- Negotiation and conflict resolution in audit scenarios
+- Sector-specific knowledge, regulations etc
 
 
 <br/>
@@ -429,6 +448,19 @@ Many Soft Skills for AI Auditors overlap with those needed in strategy consultin
 - [AuditNLG: Auditing Generative AI Language Modeling for Trustworthiness (Salesforce)](https://github.com/salesforce/AuditNLG)
 - [HRIA (Human Rights Impact Assessment) Guidance and Template](https://www.humanrights.dk/files/media/document/A%20HRIA%20of%20Digital%20Activities%20-%20Introduction_ENG_accessible.pdf)
 - [AI Auditing Checklist for AI Auditing](https://www.edpb.europa.eu/system/files/2024-06/ai-auditing_checklist-for-ai-auditing-scores_edpb-spe-programme_en.pdf)
+- [NIST Artificial Intelligence Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf)
+- [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
+
+### Links regarding Commercial Auditing Tools
+
+(no affiliantions whatsoever)
+
+- [AI Auditing Tools: Empowering Systems with Best 6 Solutions](https://hyscaler.com/insights/ai-auditing-tools-empower-6-ways/)
+- [Popular Software Tools for AI Auditability](https://www.fairo.ai/blog/popular-ai-tools) - [Fairo](https://www.fairo.ai/) has solutions for AI Oversight, Testing & Operations and AI Complince. 
+- [Compare Top 25 AI Governance Tools: A Vendor Benchmark](https://research.aimultiple.com/ai-governance-tools/)
+- [AI for auditing – First steps towards automation](https://lamarr-institute.org/blog/ali-ai-for-auditing/) - LAMARR is The Lamarr Institute for Machine Learning and Artificial Intelligence.
+- [Introducing Fiddler Auditor: Evaluate the Robustness of LLMs and NLP Models](https://www.fiddler.ai/blog/introducing-fiddler-auditor-evaluate-the-robustness-of-llms-and-nlp-models)
+- [AI Security Tools: The Open-Source Toolkit](https://www.wiz.io/academy/ai-security-tools)
 
 <br/>
 

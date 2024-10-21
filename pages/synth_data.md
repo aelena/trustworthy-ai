@@ -1,6 +1,7 @@
 # Why Synthetic Data matters when auditing AI & ML Models
 
-Synthetic data is increasingly used in AI and ML applications due to its ability to protect privacy and expand datasets for model training, and this is why even some data marketplaces are selling it. 
+Synthetic data is increasingly used in AI and ML applications due to its ability to protect privacy and expand datasets for model training, and this is why even some data marketplaces are selling it. It is commonly assumed that synthetic data generated with the right level of privacy protection can provide safeguards against known adversarial attacks, something traditional anonymization techniques like masking or tokenization cannot promise. [Some papers](https://arxiv.org/abs/2407.07926) examine whether this is actually the case.
+
 
 However, despite its benefits, the generation and use of synthetic data must adhere to both ethical standards and regulatory requirements. This section focuses on ensuring that synthetic data is used responsibly, addressing privacy, fairness, transparency, and legal compliance.
 
@@ -87,3 +88,13 @@ However, despite its benefits, the generation and use of synthetic data must adh
 - Are cross-border transfers of synthetic data compliant with international data privacy laws?
 
 - Does the organization have a process to update synthetic data practices based on evolving regulatory requirements?
+
+<br/>
+
+# References and Links
+
+  - [Privacy and Synthetic Datasets](https://law.stanford.edu/wp-content/uploads/2019/01/Bellovin_20190129.pdf)
+  - [(Singapore PDPC) - Proposed Guide on Synthetic Data Generation](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/other-guides/proposed-guide-on-synthetic-data-generation.pdf) 
+  - [A Unified Framework for Quantifying Privacy Risk in Synthetic Data](https://petsymposium.org/popets/2023/popets-2023-0055.pdf)
+  - [European Data Protection Supervisor on Synthetic data](https://www.edps.europa.eu/press-publications/publications/techsonar/synthetic-data_en)
+  - [Exploring Synthetic Data Validation – Privacy, Utility and Fidelity](https://ico.org.uk/media/for-organisations/documents/4025484/sythetic-data-roundtable-202306.pdf)
