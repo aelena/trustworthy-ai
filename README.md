@@ -206,8 +206,11 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 - [Types of adversarial attacks](https://viso.ai/deep-learning/adversarial-machine-learning/) - 
   - Evasion
   - [Poisoning, data poisoning](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML02_2023-Data_Poisoning_Attack) - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions. As an auditor, understand what type of attack this is and check the measures in place to prevent it. 
-  - Model Extraction
-- Understand techniques such as L-BFGS, FGSM, JSMA, Deepfool, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
+  - [Model Extraction attacks](https://arxiv.org/pdf/2312.05386)
+- Understand techniques such as [Untargeted, Targeted and Universal Adversarial
+Attacks](https://arxiv.org/pdf/2101.05639), FGSM, JSMA, Deepfool, Limited-Memory BFGS, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
+  - [Adversarial Attacks and Defenses in Deep Learning](https://www.sciencedirect.com/science/article/pii/S209580991930503X)
+  - [Overview of different techniques](https://medium.com/game-of-bits/adversarial-examples-and-defence-mechanisms-against-them-e71892e87b33)
 - Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
   - Ability to create adversarial inputs for various types of AI models
   - Ability to assess AI models' resilience against adversarial attacks
