@@ -18,7 +18,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
   - [The Security Aspect](#the-security-aspect)
     - [AI Security Fundamentals](#ai-security-fundamentals)
     - [Data Privacy and Security](#data-privacy-and-security-technical)
-    - [AI Security and Adversarial AI](#ai-security-and-adversarial-ai)
+    - [Adversarial AI](#adversarial-attacks)
   - [Model Validation and Testing](#model-validation-and-testing)
   - [On Syntethic data](#on-synthetic-data)
 
@@ -126,6 +126,10 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - Quality drift - similarly, data might drift over time or, worse, production data is different to the data the model was trained on. As an auditor, you want to check this and get a sample of both sets of data, at least, to examine this.
   - General monitoring - classic infra monitoring concerns, such as SLAs, infra failures, latencies, scalability etc.
 
+  - [Monitoring Checklist: 7 Things to Track](https://towardsdatascience.com/a-machine-learning-model-monitoring-checklist-7-things-to-track-2042be98a7b5)
+
+  - [Checklist for AI Deployment](https://www.usaid.gov/sites/default/files/2023-07/Artificial%20Intelligence%20Ethics%20Checklist.pdf)
+
 ## Transparency and Explainability
 
 - Transparency and explainability - Techniques to make AI models more interpretable and their decisions more understandable, understand how models arrive at their decisions. Explainable AI (XAI) techniques: 
@@ -156,13 +160,15 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [A friendly, non-technical introduction to differential privacy](https://desfontain.es/blog/friendly-intro-to-differential-privacy.html)
   - [Hands-On Differential Privacy](https://www.oreilly.com/library/view/hands-on-differential-privacy/9781492097730/)
   - [TensorFlow Privacy library](https://github.com/tensorflow/privacy), which can be used to train privacy-preserving ML models with minimal code changes to existing TensorFlow code
-  - [Opacus library](https://opacus.ai/), which can be used to train PyTorch models while enabling Differential Privacy.
+  - [Opacus library](https://opacus.ai/), which can be used to train PyTorch models while enabling [Differential privacy](./pages/diff_priv.md).
 
 - [Platform Observability](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/4_2_3) - this interesting paper seeks to go beyond Algorithmic Transparency to "_platform observability: a pragmatic and sociotechnical perspective aimed at securing structural, real-time access to the means of platform knowledge production_", applying the classic concept of Observability *as a pragmatic alternative to algorithm-centric models of platform transparency*. 
 
   As an auditor there are several [evidence gathering techniques](./pages/evidence_gather.md) available to you. 
 
 ## Reliability and Robustness
+
+- [AI Maintenance: A Robustness Perspective](https://arxiv.org/pdf/2301.03052)
 - Model performance evaluation - going beyond the [basic accuracy metrics](https://c3.ai/introduction-what-is-machine-learning/evaluating-model-performance/), such as precision, recall, F1-score, and AUC-ROC, to provide a holistic view of model performance
   - [cross-validation and other techniques](https://www.markovml.com/blog/model-evaluation-metrics) to ensure the model's performance is consistent across different subsets of data
 - Error analysis and [debugging](https://www.markovml.com/blog/ml-model-debugging)
@@ -194,8 +200,6 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [Anonymizing Machine Learning Models](https://arxiv.org/pdf/2007.13086)
   - [Towards Personal Data Identification and Anonymization using Machine Learning Techniques](https://www.researchgate.net/profile/Francesco-Di-Cerbo/publication/327315236_Towards_Personal_Data_Identification_and_Anonymization_Using_Machine_Learning_Techniques_ADBIS_2018_Short_Papers_and_Workshops_AIQA_BIGPMED_CSACDB_M2U_BigDataMAPS_ISTREND_DC_Budapest_Hungary_September/links/5cb9efab4585156cd7a46cfa/Towards-Personal-Data-Identification-and-Anonymization-Using-Machine-Learning-Techniques-ADBIS-2018-Short-Papers-and-Workshops-AIQA-BIGPMED-CSACDB-M2U-BigDataMAPS-ISTREND-DC-Budapest-Hungary.pdf)
 - [Securing the data pipeline](https://cloud.google.com/blog/topics/threat-intelligence/securing-ai-pipeline/) to prevent unauthorized access or breaches.
-
-## AI Security and Adversarial AI
 
 ### Adversarial Attacks
 - [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning) - 
@@ -247,7 +251,7 @@ Synthetic data is a field that's [evolving fast](https://www.researchgate.net/pu
   - compliance reasons
 - Concerns around Synthetic Data Generation and Security. Complementing the previous pros, there are cons around the use of synthetic data:
   - data quality issues leading to inaccurate or less reliable models
-  - risks around reverse engineering, hence differential privacy, which, in principle, offers a mathematically robust solution to generate synthetic data that reliably retains thethe statistical characteristics of the original while protecting privacy. Nonetheless, a key concern remains: how can we guarantee that synthetic data cannot be reversed, potentially revealing sensitive information? This includes IP risks too
+  - risks around reverse engineering, hence [differential privacy](./pages/diff_priv.md), which, in principle, offers a mathematically robust solution to generate synthetic data that reliably retains thethe statistical characteristics of the original while protecting privacy. Nonetheless, a key concern remains: how can we guarantee that synthetic data cannot be reversed, potentially revealing sensitive information? This includes IP risks too
   - [data pollution/contamination](https://arxiv.org/abs/2405.09597): As more synthetic data is used, it becomes harder to separate synthetic from real data and identify sources of bias, or models could get what one could call [mad cows disease for AI models](https://arxiv.org/abs/2307.01850)
 - Presence of Bias in Synthetic Data, including bias propagation - [How to Validate the Quality of Your Synthetic Data](https://towardsdatascience.com/how-to-validate-the-quality-of-your-synthetic-data-34503eba6da)
 - [Validation](https://arxiv.org/abs/2310.16052) and Testing with Synthetic Data 
@@ -284,8 +288,11 @@ More [here](#synthetic-data-considerations)
 
 ## Model Validation and Testing
 
-- Testing for performance
+- Testing for performance, see [performance metrics](#ai-performance-metrics)
 - Testing for reliability
+  - [Accuracy of training data and model outputs in Generative AI](https://arxiv.org/pdf/2407.13072)
+  - [Reliability in Machine Learning](https://www.researchgate.net/publication/380151336_Reliability_in_Machine_Learning)
+  - [Statistical perspectives on reliability of artificial intelligence systems](https://www.researchgate.net/publication/362970158_Statistical_perspectives_on_reliability_of_artificial_intelligence_systems)
 - Testing for compliance with expected/stated outcomes
 
 ## Synthetic Data Considerations
@@ -411,8 +418,20 @@ References covering these two topics available in the [dedicated page](./pages/s
 
 ### AI Performance Metrics
 - Selecting appropriate evaluation metrics
-- Benchmarking and comparative analysis
-- Continuous monitoring of AI systems
+  - [A global analysis of metrics used for measuring performance in natural language processing](https://arxiv.org/abs/2204.11574)
+  - [A critical analysis of metrics used for measuring progress in artificial intelligence](https://arxiv.org/pdf/2008.02577)
+  - [Principles for Evaluation of AI/ML Model Performance and Robustness](https://arxiv.org/pdf/2107.02868)
+  - [Measuring AI Systems Beyond Accuracy](https://arxiv.org/pdf/2204.04211)
+  - [Analysis and Comparison of Classification Metrics](https://arxiv.org/abs/2209.05355)
+  - [Loss Functions and Metrics in Deep Learning](https://arxiv.org/abs/2307.02694)
+- [Benchmarking and comparative analysis](https://mlsysbook.ai/contents/benchmarking/benchmarking.html)
+  - [(Azure) Model benchmarks in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-benchmarks)
+  - [Comparison and Benchmarking of AI Models and Frameworks on Mobile Devices](https://arxiv.org/abs/2005.05085)
+  - [Benchmarking of Commercial Large Language Models](https://www.researchgate.net/publication/380421448_Benchmarking_of_Commercial_Large_Language_Models_ChatGPT_Mistral_and_Llama)
+- Continuous monitoring of AI systems. Understand how the model under audit is being currently monitored in production. Refer to [development lifecycle section](#ai-development-lifecycle) for more information on deployment and monitoring.
+  - [Monitoring AI systems: A Problem Analysis, Framework and Outlook](https://arxiv.org/abs/2205.02562)
+
+
 
 ### AI Documentation and Traceability
 
@@ -424,10 +443,16 @@ References covering these two topics available in the [dedicated page](./pages/s
     - [Reusable Templates and Guides For Documenting Datasets and Models for Natural Language Processing and Generation](https://huggingface.co/papers/2108.07374)
     - [Towards Accountability for Machine Learning Datasets: Practices from Software Engineering and Infrastructure](https://dl.acm.org/doi/pdf/10.1145/3442188.3445918)
     - [Data Cards playbook](https://github.com/PAIR-code/datacardsplaybook/) - [(paper)](Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI)
-- [Version control for AI models and datasets](https://neptune.ai/blog/version-control-for-ml-models) - version control is an idea that should not need selling.
+- [Version control for AI models and datasets](https://neptune.ai/blog/version-control-for-ml-models) - version control is an idea that should not need selling and which apply to AI model development just as well. 
 - Audit trail maintenance
+  - [A large-scale audit of dataset licensing and attribution in AI](https://www.nature.com/articles/s42256-024-00878-8)
 
+<br/>
 
+- [Towards Auditable AI Systems](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/Towards_Auditable_AI_Systems_2022.pdf?__blob=publicationFile&v=4)
+- [A Blueprint for Auditing Generative AI](https://www.researchgate.net/publication/382080223_A_Blueprint_for_Auditing_Generative_AI)
+
+<br/>
 
 ## Practical Skills and Tools
 
@@ -435,7 +460,7 @@ References covering these two topics available in the [dedicated page](./pages/s
 - Basic Python for data analysis and model inspection
 - Using libraries for fairness and explainability (such as [AI Fairness 360](https://aif360.res.ibm.com/) ([paper](https://arxiv.org/abs/1810.01943)) or SHAP)
 
-
+<br/>
 
 ## Soft Skills for AI Auditors
 
@@ -480,15 +505,16 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - [AI Auditing Checklist for AI Auditing](https://www.edpb.europa.eu/system/files/2024-06/ai-auditing_checklist-for-ai-auditing-scores_edpb-spe-programme_en.pdf)
 - [NIST Artificial Intelligence Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf)
 - [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
+- [A collection of machine learning model cards and datasheets](https://github.com/ivylee/model-cards-and-datasheets)
 
 ### Links regarding Commercial Auditing Tools
 
 (no affiliantions whatsoever)
 
 - [AI Auditing Tools: Empowering Systems with Best 6 Solutions](https://hyscaler.com/insights/ai-auditing-tools-empower-6-ways/)
-- [Popular Software Tools for AI Auditability](https://www.fairo.ai/blog/popular-ai-tools) - [Fairo](https://www.fairo.ai/) has solutions for AI Oversight, Testing & Operations and AI Complince. 
+- [Popular Software Tools for AI Auditability](https://www.fairo.ai/blog/popular-ai-tools) - [Fairo](https://www.fairo.ai/) has solutions for AI Oversight, Testing & Operations and AI Compliance 
 - [Compare Top 25 AI Governance Tools: A Vendor Benchmark](https://research.aimultiple.com/ai-governance-tools/)
-- [AI for auditing – First steps towards automation](https://lamarr-institute.org/blog/ali-ai-for-auditing/) - LAMARR is The Lamarr Institute for Machine Learning and Artificial Intelligence.
+- [AI for auditing – First steps towards automation](https://lamarr-institute.org/blog/ali-ai-for-auditing/) - LAMARR is The Lamarr Institute for Machine Learning and Artificial Intelligence
 - [Introducing Fiddler Auditor: Evaluate the Robustness of LLMs and NLP Models](https://www.fiddler.ai/blog/introducing-fiddler-auditor-evaluate-the-robustness-of-llms-and-nlp-models)
 - [AI Security Tools: The Open-Source Toolkit](https://www.wiz.io/academy/ai-security-tools)
 
