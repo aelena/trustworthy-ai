@@ -238,7 +238,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 ## On Synthetic data
 
-Synthetic data is a field that's [evolving fast](https://www.researchgate.net/publication/383910617_Advancements_in_Synthetic_Data_Generation_A_Comprehensive_Exploration_of_Generative_Models_Privacy-Preserving_Techniques_and_Real-World_Applications_Across_Industries) and attracting interest from multiple industries and regulators. It offers [interesting use cases](https://www.researchgate.net/publication/357007527_Synthetic_data_use_exploring_use_cases_to_optimise_data_utility) in the training of ML & AI models, offering diverse and controlled datasets (ideally) that enhance model performance while minimizing privacy risks, reducing undesirable biases and in some cases, where socially desirable, injecting appropriate biases to reduce inequities. We explore more links on this topic [later in this document](#synthetic-data-considerations), from a governance point of view. However, from a more technical perspective, an AI auditor should be familiar with the following:
+Synthetic data is a field that's [evolving fast](https://www.researchgate.net/publication/383910617_Advancements_in_Synthetic_Data_Generation_A_Comprehensive_Exploration_of_Generative_Models_Privacy-Preserving_Techniques_and_Real-World_Applications_Across_Industries) and attracting interest from multiple industries and regulators. It offers [interesting use cases](https://www.researchgate.net/publication/357007527_Synthetic_data_use_exploring_use_cases_to_optimise_data_utility) in the training of ML & AI models, offering diverse and controlled datasets (ideally) that enhance model performance while minimizing privacy risks, reducing undesirable biases and in some cases, where socially desirable, injecting appropriate biases to reduce inequities. We explore more links on this topic [later in this document](#synthetic-data-considerations), from a governance point of view. However, from a more technical perspective, an AI auditor should be familiar with the [opportunities and risks](https://arxiv.org/pdf/2309.00652) of the use of synthetic data:
 
 - Understand the growing relevance of synthetic data and
   - applicability for addressing data deficits and representation concerns
@@ -252,7 +252,7 @@ Synthetic data is a field that's [evolving fast](https://www.researchgate.net/pu
 - Presence of Bias in Synthetic Data, including bias propagation - [How to Validate the Quality of Your Synthetic Data](https://towardsdatascience.com/how-to-validate-the-quality-of-your-synthetic-data-34503eba6da)
 - [Validation](https://arxiv.org/abs/2310.16052) and Testing with Synthetic Data 
 
-More [here](#on-synthetic-data)
+More [here](#synthetic-data-considerations)
 
 <br/>
 
@@ -358,6 +358,14 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 ### Sustainability Considerations
 
+- [Towards Sustainability of AI – Identifying Design Patterns for Sustainable Machine Learning Development](https://www.researchgate.net/publication/384071507_Towards_Sustainability_of_AI_-_Identifying_Design_Patterns_for_Sustainable_Machine_Learning_Development/link/66e95304dde50b3258789769/download)
+- [Towards Sustainable Artificial Intelligence: An Overview of Environmental Protection Uses and Issues](https://arxiv.org/pdf/2212.11738)
+- [A Survey on AI Sustainability: Emerging Trends on Learning Algorithms and Research Challenges](https://arxiv.org/abs/2205.03824)
+- [Broadening the perspective for sustainable AI: Sustainability criteria and indicators for Artificial Intelligence systems](https://arxiv.org/pdf/2306.13686)
+- [Sustainable AI: Environmental Implications, Challenges and Opportunities](https://www.researchgate.net/publication/355843251_Sustainable_AI_Environmental_Implications_Challenges_and_Opportunities)
+- [Artificial intelligence - driven sustainable development: Examining organizational, technical, and processing approaches to achieving global goals](https://www.diva-portal.org/smash/get/diva2:1807287/FULLTEXT01.pdf)
+- [Sustain Magazine](https://algorithmwatch.org/en/wp-content/uploads/2022/06/SustAIn_Magazine_2022_EN.pdf)
+- [Efficiency is Not Enough: A Critical Perspective of Environmentally Sustainable AI](https://arxiv.org/abs/2309.02065)
 <br/>
 
 
