@@ -53,7 +53,32 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 <br/>
 
+```mermaid
+flowchart TD
+    A("fa:fa-book-open AI Auditor BoK") -- Builds --> B("fa:fa-code Technical Expertise")
+    A -- Follows --> C("fa:fa-comment-dots Regulatory & Ethics")
+    A -- Leverages --> D("fa:fa-shapes Auditor Skills")
+    B -- Feeds into --> E("Organizational AI&ML BoK")
+    C -- Feeds into --> E
+    D -- Feeds into --> E
+    E -- Builds --> F("Trustworthy AI Capability")
+
+    style B color:#424242, fill:#AA00FF, stroke:#AA00FF,fill:#BBDEFB,stroke:#FFF9C4
+    style C color:#FFFFFF, stroke:#00C853, fill:#00C853,fill:#2962FF,stroke:#FFF9C4
+    style D color:#FFFFFF, stroke:#2962FF, fill:#2962FF,fill:#757575,stroke:#FFF9C4
+    style F color:#FFFFFF, fill:#AA00FF, stroke:#AA00FF,fill:#FF6D00,stroke:#FFF9C4
+```
+
+<br/>
+
+<details>
+<summary>Notice</summary>
+
 __Although we have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
+
+No affiliation links whatsoever.
+
+</details>
 
 <br/>
 
@@ -514,9 +539,13 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
 - [A collection of machine learning model cards and datasheets](https://github.com/ivylee/model-cards-and-datasheets)
 
-### Links regarding Commercial Auditing Tools
+<br/>
 
-(no affiliantions whatsoever)
+<details>
+
+<summary>Links for Commercial Auditing Tools</summary>
+
+### Links regarding Commercial Auditing Tools
 
 - [AI Auditing Tools: Empowering Systems with Best 6 Solutions](https://hyscaler.com/insights/ai-auditing-tools-empower-6-ways/)
 - [Popular Software Tools for AI Auditability](https://www.fairo.ai/blog/popular-ai-tools) - [Fairo](https://www.fairo.ai/) has solutions for AI Oversight, Testing & Operations and AI Compliance 
@@ -524,6 +553,8 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - [AI for auditing – First steps towards automation](https://lamarr-institute.org/blog/ali-ai-for-auditing/) - LAMARR is The Lamarr Institute for Machine Learning and Artificial Intelligence
 - [Introducing Fiddler Auditor: Evaluate the Robustness of LLMs and NLP Models](https://www.fiddler.ai/blog/introducing-fiddler-auditor-evaluate-the-robustness-of-llms-and-nlp-models)
 - [AI Security Tools: The Open-Source Toolkit](https://www.wiz.io/academy/ai-security-tools)
+
+</details>
 
 <br/>
 
@@ -560,3 +591,4 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 - AWS - https://aws.amazon.com/ai/generative-ai/security/
 - SGS - [Trustworthiness of AI](https://www.sgs.com/en/whitepapers/trustworthiness-of-ai-form)
 - SGS - [White Paper: Trustworthy AI, Privacy and Security](https://www.sgs.com/en/whitepapers/trustworthy-ai-privacy-and-security-in-ai-form)
+
