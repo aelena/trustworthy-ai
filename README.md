@@ -114,7 +114,8 @@ Comprehensive auditing frameworks have to
 and will need to include
 
 - the entire AI lifecycle, from problem definition and data collection to model development, deployment, and monitoring
-- stakeholder with potentially varying interests, ethical metrics, and relevancy matrices to connect metrics to stakeholder interests and the alignment with stated corporate missions / visions.
+- stakeholder with potentially varying interests, ethical metrics, and relevancy matrices to connect metrics to stakeholder interests and the alignment with stated corporate missions / visions
+
 
 ## Challenges
 
@@ -123,8 +124,17 @@ One of the primary obstacles is the absence of widely adopted, standardized fram
 - AI systems and solutions vary widely, making it difficult to create a one-size-fits-all audit framework
 - The field is constantly evolving, requiring auditors to continuously update their knowledge and adapt their techniques, and in many cases, audits will require specialized domain knowledge
 - AI systems tend to be highly complex, involving various technologies and processes, which complicates the creation of comprehensive audit procedures
+- their black-box nature
+  - Difficulty in tracing decision pathways in transformer architectures
+  - Emergent behaviors may not be apparent during initial testing
+  - Complex interactions between model components
 - Different regulatory bodies may have distinct requirements
 - The skills gap
+- Inconsistent or incompelte documentation, and lack of standards
+- Difficulty in validating the quality of massive training datasets, which can probably be done with programming, automation or additional AI but which requires careful review and oversight, especially in sensitive use cases.
+
+Many more challenges in the [dedicated page](./pages/challenges.md)
+
 
 ## References
 
