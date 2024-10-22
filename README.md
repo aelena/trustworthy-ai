@@ -130,7 +130,7 @@ One of the primary obstacles is the absence of widely adopted, standardized fram
   - Complex interactions between model components
 - Different regulatory bodies may have distinct requirements
 - The skills gap
-- Inconsistent or incompelte documentation, and lack of standards
+- Inconsistent or incomplete documentation, and lack of standards
 - Difficulty in validating the quality of massive training datasets, which can probably be done with programming, automation or additional AI but which requires careful review and oversight, especially in sensitive use cases.
 
 Many more challenges are outlined in the [dedicated page](./pages/challenges.md)
