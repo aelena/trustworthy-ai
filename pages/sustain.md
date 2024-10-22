@@ -2,7 +2,7 @@
 
 There are two key topics in this dimension for the AI model auditor.
 
-- Understand the sustainability concerns and trends around AI & ML models.
+- Understand the sustainability concerns and trends around AI & ML models. Obvious things like high energy consumption (resource intensity) and commensurate carbon footprint, both in training and in use.
 
   - [Towards Sustainability of AI – Identifying Design Patterns for Sustainable Machine Learning Development](https://www.researchgate.net/publication/384071507_Towards_Sustainability_of_AI_-_Identifying_Design_Patterns_for_Sustainable_Machine_Learning_Development/link/66e95304dde50b3258789769/download)
   - [Towards Sustainable Artificial Intelligence: An Overview of Environmental Protection Uses and Issues](https://arxiv.org/pdf/2212.11738)

@@ -34,10 +34,9 @@
 - Evaluate convergence and stopping criteria
 
 ### Tools and Resources:
-- Model visualization tools (e.g., Netron, TensorBoard)
+- Model visualization tools (e.g., [Netron](https://github.com/lutzroeder/netron), [TensorBoard](https://www.tensorflow.org/tensorboard))
 - Code quality analyzers (e.g., SonarQube, Pylint)
-- Experiment tracking platforms (e.g., MLflow, Weights & Biases)
-- Version control analysis tools (e.g., Git Analytics)
+- Experiment tracking platforms (e.g., MLflow, [Weights & Biases](https://wandb.ai/site))
 
 ## Phase 3: Performance Evaluation
 ### 3.1 Quantitative Analysis
@@ -73,8 +72,8 @@
 
 ### Tools and Resources:
 - Fairness toolkits (e.g., AI Fairness 360, Fairlearn)
-- Bias detection frameworks (e.g., Aequitas, What-If Tool)
-- Statistical analysis packages (e.g., scipy, statsmodels)
+- Bias detection frameworks (e.g., [Aequitas](https://dssg.github.io/aequitas/), What-If Tool)
+- Statistical analysis packages (e.g., scipy, [statsmodels](https://www.statsmodels.org/stable/index.html))
 - Visualization tools (e.g., Matplotlib, Seaborn)
 
 ## Phase 5: Safety and Security Assessment

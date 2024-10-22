@@ -146,6 +146,8 @@ See [dedicated page](./pages/process.md)
 - [(ISACA) Auditing AI Report](https://ec.europa.eu/futurium/en/system/files/ged/auditing-artificial-intelligence.pdf), which examines challenges to the AI Auditor and ties the application of ISACA's own COBIT to Auditing AI models. 
 - [AI Algorithm Audits: Key Control Considerations](https://www.isaca.org/resources/news-and-trends/industry-news/2024/ai-algorithm-audits-key-control-considerations)
 - [An In-Depth Guide To Help You Start Auditing Your AI Models](https://censius.ai/blogs/ai-audit-guide)
+- [Towards Auditable AI Systems - From Principles to Practice](https://www.hhi.fraunhofer.de/fileadmin/Departments/AI/TechnologiesAndSolutions/AuditingAndCertificationOfAiSystems/2022-05-23-whitepaper-tuev-bsi-hhi-towards-auditable-ai-systems.pdf)
+- [Towards Auditable AI Systems - Current status and future directions](https://www.hhi.fraunhofer.de/fileadmin/Departments/AI/TechnologiesAndSolutions/AuditingAndCertificationOfAiSystems/2021-05-04-whitepaper-tuev-bsi-hhi-towards-auditable-ai-systems.pdf)
 
 <br/>
 <br/>
@@ -275,7 +277,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - Feature Importance: Analyzing which features contribute most to correct and incorrect predictions through different [techniques](https://www.aporia.com/learn/feature-importance/feature-importance-7-methods-and-a-quick-tutorial/). - [Comparison of feature importance measures as explanations for classification models](https://link.springer.com/article/10.1007/s42452-021-04148-9)
   - Error Patterns: Identifying systematic errors or biases in the model's predictions.
   - Debugging Techniques: Using techniques like gradient checking, learning curve analysis, and bias-variance decomposition to diagnose issues in model training and performance.
-  -Interpretability Methods: Employing techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to understand model decisions
+    - [Debugging Machine Learning Models with Python](https://www.amazon.es/Debugging-Machine-Learning-Models-Python/dp/1800208588) / ([github repo](https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python))
 - Handling edge cases and outliers, something that is also related to red teaming models and adversarial assessments
 
 
@@ -462,8 +464,8 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 ### AI Safety
 - Risk assessment and mitigation strategies
 - Fail-safe mechanisms and graceful degradation
-- Long-term AI safety considerations
-  - All of AI 6 AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads. 
+- Long-term AI & AGI safety considerations
+  - All of AI AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads, albeit not as pertinent to the work of the AI Auditor. 
 
 ### Sustainability Considerations
 
@@ -633,6 +635,7 @@ What is interesting is that there exists an incrasing interest or focus on the e
 - [NIST Artificial Intelligence Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf)
 - [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
 - [A collection of machine learning model cards and datasheets](https://github.com/ivylee/model-cards-and-datasheets)
+- [EU Aequitas Project](https://www.aequitas-project.eu/wp-content/uploads/2023/11/Factsheet_D5_1_JVG_20231116.pdf) and [site](https://www.aequitas-project.eu/)
 
 <br/>
 
