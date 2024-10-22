@@ -10,6 +10,11 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 ## ToC
 
+### [Towards Systematic Auditing of AI Models](#towards-an-implementation-of-systematic-auditing-of-ai-models-1)
+  - [Challenges](#challenges)
+  - [References](#references)
+
+
 ### [Technical Track](#technical-track)
   - [AI / ML Fundamentals](#ai-and-ml-fundamentals)
   - [AI Development Lifecycle](#ai-development-lifecycle)
@@ -85,13 +90,47 @@ flowchart TD
 
 <summary>Disclaimer</summary>
 
-__Although I have encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
+__Although I harbour encyclopedical ambitions, this tsundoku-ish repo can only be a work in progress, part learning journey, part intellectual pursuit, and does not intend to be a final one stop shop__
 
 The ultimate goal is to build a BoK for a team of AI Auditors inside an organization, according to the definition of [Body of Knowledge](https://en.wikipedia.org/wiki/Body_of_knowledge#:~:text=August%202022,representation%20by%20any%20knowledge%20organization.) offered by Wikipedia.
 
 __No affiliation links whatsoever__.
 
 </details>
+
+<br/>
+<br/>
+
+# Towards an implementation of Systematic Auditing of AI Models
+
+While still a developing field, the systematic auditing of AI models is a growing field aimed at ensuring fairness, transparency, and ethical alignment in AI systems. It incorporates theories and practices from multiple fields.
+
+Comprehensive auditing frameworks have to 
+
+- consider multiple dimensions like governance, strategy, performance, monitoring, review, and communication in both the technical aspects (e.g. model accuracy) and the ethical considerations
+- adhere and evolve as the standards and regulations evolve (such as ISO/IEC 42001:2023, the EU regulations on AI and Digital Services etc)
+ - evaluate the selection of monitoring metrics, their relevance, and procedures for addressing identified problems
+
+and will need to include
+
+- the entire AI lifecycle, from problem definition and data collection to model development, deployment, and monitoring
+- stakeholder with potentially varying interests, ethical metrics, and relevancy matrices to connect metrics to stakeholder interests and the alignment with stated corporate missions / visions.
+
+## Challenges
+
+One of the primary obstacles is the absence of widely adopted, standardized frameworks specifically designed for AI auditing, so many organizations are creating theirs, mostly copying each other in the rush to build (and sell) this capability.
+
+- AI systems and solutions vary widely, making it difficult to create a one-size-fits-all audit framework
+- The field is constantly evolving, requiring auditors to continuously update their knowledge and adapt their techniques, and in many cases, audits will require specialized domain knowledge
+- AI systems tend to be highly complex, involving various technologies and processes, which complicates the creation of comprehensive audit procedures
+- Different regulatory bodies may have distinct requirements
+- The skills gap
+
+## References
+
+- [(ISACA) Auditing AI Report](https://ec.europa.eu/futurium/en/system/files/ged/auditing-artificial-intelligence.pdf), which examines challenges to the AI Auditor and ties the application of ISACA's own COBIT to Auditing AI models. 
+- [AI Algorithm Audits: Key Control Considerations](https://www.isaca.org/resources/news-and-trends/industry-news/2024/ai-algorithm-audits-key-control-considerations)
+- [An In-Depth Guide To Help You Start Auditing Your AI Models](https://censius.ai/blogs/ai-audit-guide)
 
 <br/>
 <br/>
@@ -149,7 +188,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
   - [Cross-Validation](./pages/cross_valid.md), to evaluate a model's performance and generalization ability. This allows to obtain a better estimate of a model's performance on previously unseen data compared to a classic train-test split. By testing the model on multiple subsets of data, cross-validation helps detect and prevent the classic issue of overfitting.
 - [Performance](https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide) [metrics](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/) - what were the performance metrics for the AI system.
   - [Metrics to evaluate ML algorithms](https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234)
-- Bias and Fairness testing
+- [Bias and Fairness testing](./pages/bias.md)
   - [Managing bias and unfairness in data for decision support](https://link.springer.com/article/10.1007/s00778-021-00671-8)
   - [Investigating Bias with a Synthetic Data Generator](https://arxiv.org/abs/2209.05889)
   - [Towards a Standard for Identifying and Managing Bias in Artificial Intelligence](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf)
@@ -162,13 +201,14 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
     - [paper](https://arxiv.org/abs/1602.04938)
     - [paper with code](https://github.com/marcotcr/lime)
 - [Deployment and monitoring](https://configr.medium.com/ai-model-deployment-and-monitoring-f458a8a8c725) - a undeployed model is worthless, and an unmonitored one is a risk. There are a number of issues
-  - Conceptual drift - The underlying data distribution that the model was trained on can shift over time, leading to model performance degradation. As an auditor this is akin to fit for purpose over time and how this is controlled and accounted for, what strategies are in place?
-  - Quality drift - similarly, data might drift over time or, worse, production data is different to the data the model was trained on. As an auditor, you want to check this and get a sample of both sets of data, at least, to examine this.
+  - [Conceptual drift](https://reunir.unir.net/bitstream/handle/123456789/14409/a_survey_on_machine_learning.pdf?sequence=1&isAllowed=y) - The underlying data distribution that the model was trained on can shift over time, leading to model performance degradation. As an auditor this is akin to fit for purpose over time and how this is controlled and accounted for, what strategies are in place?
+  - [Quality drift](https://www.researchgate.net/publication/373610141_Explainable_Artificial_Intelligence-Based_Model_Drift_Detection_Applicable_to_Unsupervised_Environments) - similarly, data might drift over time or, worse, production data is different to the data the model was trained on. As an auditor, you want to check this and get a sample of both sets of data, at least, to examine this.
   - General monitoring - classic infra monitoring concerns, such as SLAs, infra failures, latencies, scalability etc.
 
-  - [Monitoring Checklist: 7 Things to Track](https://towardsdatascience.com/a-machine-learning-model-monitoring-checklist-7-things-to-track-2042be98a7b5)
+    - [Monitoring Checklist: 7 Things to Track](https://towardsdatascience.com/a-machine-learning-model-monitoring-checklist-7-things-to-track-2042be98a7b5)
+    - [Checklist for AI Deployment](https://www.usaid.gov/sites/default/files/2023-07/Artificial%20Intelligence%20Ethics%20Checklist.pdf)
 
-  - [Checklist for AI Deployment](https://www.usaid.gov/sites/default/files/2023-07/Artificial%20Intelligence%20Ethics%20Checklist.pdf)
+<br/>
 
 ## Transparency and Explainability
 
@@ -519,8 +559,33 @@ Dedicated literature and papers on the different dimensions of [AI ethics](https
 
 - Ability to critically evaluate AI-generated outputs, identify potential biases, and exercise independent judgment in the context of AI without yielding to mental lazyness or AI authority syndrom.
 - Develop a healthy skepticism towards AI-generated insights and answers. This point, and the previous one, will most often require solid foundational skills plus specialized domain knowledge. 
-- Navigating ethical dilemmas in AI auditing, including biases, fairness, social and business impact 
+- Navigating ethical dilemmas in AI auditing, including privacy, biases,and social and business impact. 
 
+  - [The Ethics of AI Business Practices: A Review of 47 AI Ethics Guidelines](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034804)
+  - [An Overview of Artificial Intelligence Ethics](https://www.researchgate.net/publication/362334936_An_Overview_of_Artificial_Intelligence_Ethics)
+  - [Artificial Intelligence (AI) Ethics: Ethics of AI and Ethical AI](https://www.researchgate.net/publication/340115931_Artificial_Intelligence_AI_Ethics_Ethics_of_AI_and_Ethical_AI)
+  - [A High-Level Overview of AI Ethics](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3609292)
+  - [Ethics-Based Auditing to Develop Trustworthy AI](https://www.semanticscholar.org/reader/7ca51263bb2de8a03ed661d19b59c99dc9e1cbb1)
+
+
+AI ethics is often viewed as a subset of [digital ethics](https://philpapers.org/archive/MLLHOD.pdf) (a subset of [applied ethics](https://www.frontiersin.org/articles/10.3389/fcomp.2022.776837/pdf), in turn), drawing from fields like [engineering ethics](https://en.wikipedia.org/wiki/Engineering_ethics), [philosophy of technology](https://www.sfu.ca/~andrewf/books/What_is_Philosophy_of_Technology.pdf), and science and technology studies. A complete book on the Philosophy of Technology is available [here](https://www.researchgate.net/publication/273947214_The_Philosophy_of_Technology_An_Introduction).
+
+The field of AI ethics has seen significant development and diversification over recent years. The specialized literature in converging on __5 core ethical principles: transparency, justice and fairness, non-maleficence, responsibility, and privacy__. However, the understanding and implementation of those vary regionally and across different sectors/industries. 
+
+Challenges lie as well in 
+- conflicting business goals, vested investment interests
+- the lack of robust accountability mechanisms in AI development, compared to what exists in fields with much more extense history of practice, such as medicine. 
+- the lack of a common framework for Explainable AI (XAI) does not help advance this issue. 
+- the gap in ethical knowledge and tools and the difficulty in translating the gap from philosophical discussions around AI Ethics to actionable guidance that can be applied in the AI development lifecycle, and not all organizations will have people well-versed in this.
+- lacking or weak implementations of governance frameworks and accountability measures. Effective governance includes mandated controls, audit trails, and ethics boards to oversee AI deployments
+- the difficulty in adequately estimating and managing risks associated with AI
+
+What is interesting is that there exists an incrasing interest or focus on the ethical management of AI within organizations, perhaps driven by regulatory and reputational interests. Frameworks like the [Ethical Management of AI (EMMA)](https://www.mdpi.com/2071-1050/13/4/1974) are being proposed to guide managerial decision-making and integrate ethical considerations into AI development and deployment. 
+
+  - [Specific challenges posed by artificial intelligence in research ethics](https://www.semanticscholar.org/paper/Specific-challenges-posed-by-artificial-in-research-Bouhouita-Guermech-Gogognon/c2c4203671dc0f7afd7e61197af3832702c7f7b8)
+  - [Beyond the promise: implementing ethical AI](https://www.semanticscholar.org/paper/Beyond-the-promise%3A-implementing-ethical-AI-Eitel-Porter/0a7109502e7fe91f4decc3dd3515e1fecbc02da7)
+  - [Ethics of AI: A Systematic Literature Review of Principles and Challenges](https://oulurepo.oulu.fi/bitstream/handle/10024/45173/nbnfi-fe2023033134043.pdf?sequence=1&isAllowed=y)
+  - [The Ethics of AI Ethics: An Evaluation of Guidelines](https://link.springer.com/article/10.1007/s11023-020-09517-8)
 
 ### Communication and Stakeholder Management
 
