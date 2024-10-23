@@ -184,7 +184,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 - Understand the different roles involved, from data scientist to [AI product owner](https://www.datascience-pm.com/ai-product-owner/)
 - Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
 - Data collection and preparation. Evaluate things like
-  - data quality - dedicated separate page on [data quality](./pages/data_qa.md)
+  - data quality - dedicated separate page on [data quality](./pages/data_qa.md) 👈
   - completeness
   - consistency
   - relevance to the problem (hence need to have a clear scope and problem formulation in previous step)
