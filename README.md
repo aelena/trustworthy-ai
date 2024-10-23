@@ -167,7 +167,6 @@ Get more than a passing familiarity with the underlying technology and main para
   - Neural networks ([FNN, RNN, CNN, LSTM](./pages/neural_networks_overview.md), [Transformer](https://arxiv.org/abs/1706.03762)) and [backpropagation](https://cklixx.people.wm.edu/teaching/math400/Annette-paper.pdf)
 - Machine learning algorithms and techniques ([coursera](https://www.coursera.org/articles/machine-learning-algorithms), [comprehensive overview](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/), [a simple list](https://medium.com/@price_kj/list-of-all-machine-learning-ml-algorithms-7c839f8c0d73), [the wikipedia rabbit hole](https://en.wikipedia.org/wiki/Category:Machine_learning_algorithms))
 
-
 ## AI Development Lifecycle
 
 Understand all the stages of the AI & ML Development Lifecycle and what each stage entails. [More detail here](./pages/aiml_dev_lifecycle.md)
@@ -185,7 +184,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 - Understand the different roles involved, from data scientist to [AI product owner](https://www.datascience-pm.com/ai-product-owner/)
 - Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
 - Data collection and preparation. Evaluate things like
-  - data quality
+  - data quality - dedicated separate page on [data quality](./pages/data_qa.md)
   - completeness
   - consistency
   - relevance to the problem (hence need to have a clear scope and problem formulation in previous step)
@@ -229,7 +228,10 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 ## Transparency and Explainability
 
-- Transparency and explainability - Techniques to make AI models more interpretable and their decisions more understandable, understand how models arrive at their decisions. Explainable AI (XAI) techniques: 
+Dedicated pages 👉 __[Transparency](./pages/transparency.md)__ and on __[algorithmic transparency](./pages/algo_trans.md)__
+
+
+- [Transparency](./pages/transparency.md) and explainability - Techniques to make AI models more interpretable and their decisions more understandable, understand how models arrive at their decisions. Explainable AI (XAI) techniques: 
   - [Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence](https://www.sciencedirect.com/science/article/pii/S1566253523001148)
   - [XAI 2.0 paper](https://arxiv.org/abs/2310.19775)
   - [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/abs/1802.01933)
