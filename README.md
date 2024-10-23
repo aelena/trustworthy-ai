@@ -183,7 +183,7 @@ Refer to the [Tools, templates and Checklists section](#tools-templates-checklis
 
 - Understand the different roles involved, from data scientist to [AI product owner](https://www.datascience-pm.com/ai-product-owner/)
 - Problem Scoping - a specific problem must have been defined which was decided was best approached via AI/ML. This is a critical step that shapes the entire project/product. A well-defined problem helps streamline data collection, model development, and ensures the solution works as intended. This is where an AI product manager plays a key role.
-- Data collection and preparation. Evaluate things like
+- Data collection and preparation. [Evaluate](https://arxiv.org/abs/2303.01998) things like
   - data quality - dedicated separate page on [data quality](./pages/data_qa.md) 👈
   - completeness
   - consistency
@@ -305,8 +305,9 @@ Dedicated pages 👉 __[Transparency](./pages/transparency.md)__ and on __[algor
 - [Securing the data pipeline](https://cloud.google.com/blog/topics/threat-intelligence/securing-ai-pipeline/) to prevent unauthorized access or breaches.
 
 ### Adversarial Attacks
-- [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning) - 
-- [Types of adversarial attacks](https://viso.ai/deep-learning/adversarial-machine-learning/) - 
+- [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning)
+- [(NIST) Adversarial ML - A Taxonomy and Terminology of Attacks and Mitigations](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+- [Types of adversarial attacks](https://viso.ai/deep-learning/adversarial-machine-learning/) 
   - Evasion
   - [Poisoning, data poisoning](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML02_2023-Data_Poisoning_Attack) - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions. As an auditor, understand what type of attack this is and check the measures in place to prevent it. 
   - [Model Extraction attacks](https://arxiv.org/pdf/2312.05386)
@@ -472,6 +473,8 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 ### AI Safety
 - Risk assessment and mitigation strategies
 - Fail-safe mechanisms and graceful degradation
+- GenAI Safety considerations
+  - [(NIST) Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
 - Long-term AI & AGI safety considerations
   - All of AI AGI Existential Safety risks papers by [Roman V. Yampolskiy](https://scholar.google.com/citations?user=0_Rq68cAAAAJ&hl=en). It's a long list, and amazing reads, albeit not as pertinent to the work of the AI Auditor. 
 
@@ -644,6 +647,7 @@ What is interesting is that there exists an incrasing interest or focus on the e
 - [(Microsoft) PyRIT Framework - Python Risk Identification Toolkit for generative AI](https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/) - [github code](https://github.com/Azure/PyRIT)
 - [A collection of machine learning model cards and datasheets](https://github.com/ivylee/model-cards-and-datasheets)
 - [EU Aequitas Project](https://www.aequitas-project.eu/wp-content/uploads/2023/11/Factsheet_D5_1_JVG_20231116.pdf) and [site](https://www.aequitas-project.eu/)
+- [(SEI) MLTEing Models: Negotiating, Evaluating, and Documenting Model and System Qualities](https://github.com/mlte-team/mlte?tab=readme-ov-file)
 
 <br/>
 
@@ -685,6 +689,7 @@ These two courses are not specifically related to auditing but are interesting b
 - [ISO/IEC 42001 Lead Auditor](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-lead-auditor)
 - [UL Certified Artificial Intelligence Professional](https://www.ul.com/sis/training/ul-certified-artificial-intelligence-professional)
 - [EITCA](https://eitca.org/eitca-ai-artificial-intelligence-academy/)
+- [ForHumanity Certifications](https://forhumanity.center/certifications/?v=920f83e594a1) - different certifications around AI
 
 <br/>
 
@@ -695,6 +700,8 @@ These two courses are not specifically related to auditing but are interesting b
 - [Towards a Business Case for AI Ethics](https://jyx.jyu.fi/bitstream/handle/123456789/93508/agbeseym.pdf?sequence=1&isAllowed=y) (direct PDF download). Also available as part of this Open Access Book, [Software Business](https://link.springer.com/book/10.1007/978-3-031-53227-6)
 - [The intersection of Responsible AI and ESG](https://www.csiro.au/-/media/D61/Responsible-AI/Alphinity/Responsible-AI-and-ESG.pdf)
 - [Artificial Intelligence Ethics, Governance and policy challenges - CEPS Task Force Report](https://cdn.ceps.eu/wp-content/uploads/2019/02/AI_TFR.pdf)
+- [2024 AI ASSURANCE TECHNOLOGY MARKET REPORT](https://drive.google.com/file/d/1VcAdwn46qVfc2j-6ls0JXoVwHwuH4YSY/view)
+- [Code & conduct - How to create third party auditing regimes for AI](https://www.hkdca.com/wp-content/uploads/2024/06/code-and-conduct-ada-lovelace.pdf)
 
 
 <br/>
