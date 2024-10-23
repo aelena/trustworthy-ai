@@ -1,6 +1,6 @@
-# Trustworthy AI
+# Towards a Trustworthy AI Program
 
-This repository tries to outline a comprehensive programme for setting up an in-house Trustworthy AI initiative or capability group. It's a wide and evolving topic that spans areas beyond technology itself, including ethics, law, social sciences and even philosophy. Therefore this lists the knowledge and capabilities the group of AI auditors should have. 
+This repository tries to outline a comprehensive program for setting up an in-house Trustworthy AI initiative or capability group. It's a wide and evolving topic that spans areas beyond technology itself, including ethics, law, social sciences and even philosophy. Therefore this lists the knowledge and capabilities the group of AI auditors should have. 
 
 This takes inspiration from a large number of public papers (arxiv mostly) on the technical side of things, as well as document from regulators, think-tanks and other policy actors.
 
@@ -29,6 +29,7 @@ One could think of structuring this in two main tracks, the Technical (which cov
 
 ### [Regulatory Track](#regulatory)
   - [Trustworthy AI](#trustworthy-ai)
+  - [AI Assurance](#ai-assurance)
   - [Legal and Regulatory Compliance](#legal-and-regulatory-compliance)
   - [Data Privacy Protection](#data-privacy-protection)
   - [Model Validation and Testing](#model-validation-and-testing)
@@ -376,6 +377,10 @@ More [here](#synthetic-data-considerations)
 -  [EU HLEG AI Guidelines](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
 - [China CAICT White Paper on TAI](http://www.caict.ac.cn/english/research/whitepapers/202110/P020211014399666967457.pdf)
  
+## AI Assurance
+
+[On AI Assurance](./pages/assurance.md)
+
 
 ## Legal and Regulatory Compliance
 
