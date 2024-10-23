@@ -36,7 +36,7 @@
 ### Tools and Resources:
 - Model visualization tools (e.g., [Netron](https://github.com/lutzroeder/netron), [TensorBoard](https://www.tensorflow.org/tensorboard))
 - Code quality analyzers (e.g., SonarQube, Pylint)
-- Experiment tracking platforms (e.g., MLflow, [Weights & Biases](https://wandb.ai/site))
+- Experiment tracking platforms (e.g., MLflow, [Weights & Biases](https://wandb.ai/site), [Comet](https://www.comet.com/site/), [Opik](https://www.comet.com/site/products/opik/) (for LLMs) )
 
 ## Phase 3: Performance Evaluation
 ### 3.1 Quantitative Analysis

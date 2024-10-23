@@ -450,10 +450,16 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 - Industry standards and best practices
   - [IEEE  Standard Model Process for Addressing Ethical Concerns during System Design  (IEEE Std 7000–2021)](https://ieeexplore.ieee.org/document/9536679)
   - [IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems](https://standards.ieee.org/industry-connections/activities/ieee-global-initiative/), which provides a comprehensive set of ethical principles for AI development and covers areas such as transparency, accountability, and privacy protection ([pdf](https://ieee-sa.imeetcentral.com/p/eAAAAAAASwyHAAAAAFNa5fs))
-  - [ISO Standards for AI](https://www.iso.org/sectors/it-technologies/ai)
-  - [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html)
-  - [ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html) for AI Risk Management
-  - [ISO/IEC 23053:2022](https://www.iso.org/standard/74438.html)
+  - Some [ISO Standards for AI](https://www.iso.org/sectors/it-technologies/ai) are:
+    - [ISO/IEC DIS 42006](https://www.iso.org/standard/44546.html), forthcoming, and will detail requirements for bodies providing audit and certification of artificial intelligence management systems, so will be important for AI auditors
+    - [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) - designed for entities providing or utilizing AI-based products or services, this standard specifies requirements for establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS) within organizations. Therefore, it is important for AI Auditors to certify responsible AI in said organizations.
+    - [ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html), for AI Risk Management
+    - [ISO/IEC 23053:2022](https://www.iso.org/standard/74438.html)
+    - [ISO/IEC TR 24027:2021](https://www.iso.org/standard/77607.html), for Bias in AI systems and AI aided decision making
+    - [ISO/IEC TS 12791](https://www.iso.org/standard/84110.html), covering the treatment of unwanted bias in classification and regression machine learning tasks
+
+    There are [quite a few more ISO's related to AI](https://www.iso.org/search.html?PROD_isoorg_en%5Bquery%5D=artificial%20intelligence&PROD_isoorg_en%5Bmenu%5D%5Bfacet%5D=standard), far too many to list here, which can be relevant depending on the certification scenario.
+
 - Organizational AI governance structures
   - [AIGA](https://ai-governance.eu/ai-governance-framework/the-ai-governance-lifecycle/)
   - [Defining organizational AI governance](https://link.springer.com/content/pdf/10.1007/s43681-022-00143-x.pdf) (open access journal article)
