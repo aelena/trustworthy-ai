@@ -1,0 +1,30 @@
+# Types of Attacks
+
+Here's a comprehensive markdown table summarizing the various types of adversarial attacks against AI models, including descriptions and relevant papers where applicable:
+
+| Attack Type | Description | Relevant Paper |
+|-------------|-------------|----------------------|
+| Evasion Attacks | These attacks occur at inference time, where an attacker manipulates input data to cause misclassification or incorrect predictions. The goal is to fool the model without changing its parameters. Evasion attacks can be white-box (attacker knows model internals) or black-box (attacker only has input/output access). | "[Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572)" (Goodfellow et al., 2014) arXiv:1412.6572 |
+| Poisoning Attacks | These attacks target the training phase of machine learning models. Attackers inject malicious or corrupted data into the training dataset to compromise the model's performance or introduce specific vulnerabilities. This can lead to degraded overall performance or the insertion of backdoors. | "[Poisoning Attacks against Support Vector Machines](https://arxiv.org/abs/1206.6389)" (Biggio et al., 2012) arXiv:1206.6389<br/>"[Security Evaluation of Support Vector Machines in Adversarial Environments](https://arxiv.org/abs/1206.6389)" (Biggio et al., 2014) arXiv:1401.7727 |
+| Membership Inference Attacks | In these attacks, an adversary attempts to determine whether a specific data point was used to train a machine learning model. This can lead to privacy breaches by revealing information about the training data. The attack often exploits the difference in model behavior on seen vs. unseen data. | "[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820)" (Shokri et al., 2017) arXiv:1610.05820 |
+| Attribute Inference Attacks | These attacks aim to infer sensitive attributes about individuals in the training data, even if those attributes were not directly used in training. The attacker exploits correlations learned by the model to deduce protected information. | "[Attribute Inference Attacks in Online Social Networks](https://home.engineering.iastate.edu/~neilgong/papers/AttriInferTOPS.pdf)" (Gong & Liu, 2016) arXiv:1602.06543 |
+| Model Inversion Attacks | In these attacks, an adversary attempts to reconstruct training data or extract sensitive information from a trained model. This can be particularly dangerous for models trained on private or sensitive data. | "[Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)" (Fredrikson et al., 2015) |
+| Prompt Injection Attacks | Specific to large language models, these attacks involve crafting malicious prompts to manipulate the model's output, potentially bypassing safety measures or extracting sensitive information. | "[Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173)" (Wen et al., 2023) arXiv:2302.12173 |
+| Jailbreaking Attacks | These attacks aim to bypass ethical constraints or content filters in language models, causing them to generate harmful or inappropriate content. Attackers use carefully crafted prompts to manipulate the model's behavior. | "[Jailbreaking Black Box Large Language Models in Twenty Queries](https://arxiv.org/abs/2310.08419)" (Wen et al., 2023) arXiv:2310.08419 |
+| System Prompt Extraction | This attack attempts to reveal the underlying instructions or system prompts given to a language model. By doing so, attackers can gain insights into the model's constraints and potentially find ways to bypass them. | "[Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805)" (Carlini et al., 2021) arXiv:2012.07805 |
+| Model Stealing Attacks | In these attacks, an adversary attempts to duplicate or steal the functionality of a machine learning model by querying it and using the responses to train a new model. This can lead to intellectual property theft and unauthorized model replication. | "[Stealing Machine Learning Models via Prediction APIs](https://arxiv.org/abs/1609.02943)" (Tramèr et al., 2016) arXiv:1609.02943 |
+| Adversarial Examples | These are inputs to machine learning models that have been specifically designed to cause the model to make a mistake. They're often created by adding small, carefully crafted perturbations to valid inputs. | "[Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199)" (Szegedy et al., 2013) arXiv:1312.6199 |
+| Side-Channel Attacks | These attacks exploit information gained from the physical implementation of a model, such as timing information, power consumption, or electromagnetic leaks. They can be used to extract sensitive information or model parameters. | "[Cache Telepathy: Leveraging Shared Resource Attacks to Learn DNN Architectures](https://www.usenix.org/system/files/sec20-yan.pdf)" (Yan et al., 2020) |
+| Federated Learning Attacks | These attacks target distributed learning systems where multiple parties collaboratively train a model without sharing their raw data. Attackers can exploit this setup to inject malicious updates or infer information about other participants' data. | "[How To Backdoor Federated Learning](https://arxiv.org/abs/1807.00459)" (Bagdasaryan et al., 2020) arXiv:1807.00459 |
+
+<br/>
+
+# Citations:
+- [1] https://mindgard.ai/resources/ai-under-attack-six-key-adversarial-attacks-and-their-consequences
+- [2] https://www.paloaltonetworks.com/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning
+- [3] https://www.nightfall.ai/ai-security-101/adversarial-attacks-and-perturbations
+- [4] https://www.michalsons.com/blog/membership-inference-attacks-a-new-ai-security-risk/64440
+- [5] https://securing.ai/ai-security/adversarial-attacks-ai/
+- [6] https://www.dremio.com/wiki/adversarial-attacks-in-ai/
+- [7] https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf
+- [8] https://neptune.ai/blog/adversarial-machine-learning-defense-strategies

@@ -306,16 +306,18 @@ Dedicated pages 👉 __[Transparency](./pages/transparency.md)__ and on __[algor
 - [Securing the data pipeline](https://cloud.google.com/blog/topics/threat-intelligence/securing-ai-pipeline/) to prevent unauthorized access or breaches.
 
 ### Adversarial Attacks
-- [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning)
 - [(NIST) Adversarial ML - A Taxonomy and Terminology of Attacks and Mitigations](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+- [Overview of different techniques](https://medium.com/game-of-bits/adversarial-examples-and-defence-mechanisms-against-them-e71892e87b33)
+- [White Box & Black Box](https://deepgram.com/ai-glossary/adversarial-machine-learning)
 - [Types of adversarial attacks](https://viso.ai/deep-learning/adversarial-machine-learning/) 
-  - Evasion
+  - [Evasion](https://arxiv.org/abs/2406.08050) - Evasion attacks aim to manipulate the input to an AI model during inference time to cause incorrect outputs or predictions
   - [Poisoning, data poisoning](https://owasp.org/www-project-machine-learning-security-top-10/docs/ML02_2023-Data_Poisoning_Attack) - a strategy where attackers inject corrupted data into the machine learning pipeline, causing the model to learn incorrect patterns and make erroneous predictions. As an auditor, understand what type of attack this is and check the measures in place to prevent it. 
   - [Model Extraction attacks](https://arxiv.org/pdf/2312.05386)
+  - [Other types of attacks](./pages/attacks.md)
 - Understand techniques such as [Untargeted, Targeted and Universal Adversarial
 Attacks](https://arxiv.org/pdf/2101.05639), FGSM, JSMA, Deepfool, Limited-Memory BFGS, [Carlini & Wagner Attack](https://arxiv.org/abs/1608.04644), how GANs can be used to generate adversarial attacks, Zeroth-order optimization attack and others.
   - [Adversarial Attacks and Defenses in Deep Learning](https://www.sciencedirect.com/science/article/pii/S209580991930503X)
-  - [Overview of different techniques](https://medium.com/game-of-bits/adversarial-examples-and-defence-mechanisms-against-them-e71892e87b33)
+
 - Generating and detecting [adversarial examples](https://arxiv.org/pdf/1712.07107)
   - Ability to create adversarial inputs for various types of AI models
   - Ability to assess AI models' resilience against adversarial attacks
