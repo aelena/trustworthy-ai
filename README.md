@@ -443,6 +443,7 @@ Basic guidance such as that provided by the [OECD AI Policy Observatory](https:/
   - [EU AI HLEG - High-level expert group on artificial intelligence](https://digital-strategy.ec.europa.eu/en/policies/expert-group-ai)
   - [IEEE Ethically Aligned Design](https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf)
   - [Ethical Requirements for AI Systems](https://www.researchgate.net/publication/339886423_Ethical_Requirements_for_AI_Systems)
+  - [IEEE Standard Model Process for Addressing Ethical Concerns during System Design](https://www.aditicorp.com/wp-content/uploads/2024/09/7000-2021.pdf)
 
 
   

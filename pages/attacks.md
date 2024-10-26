@@ -1,6 +1,6 @@
 # Types of Attacks
 
-Here's a comprehensive markdown table summarizing the various types of adversarial attacks against AI models, including descriptions and relevant papers where applicable:
+Here's a comprehensive markdown table summarizing the various types of adversarial attacks against AI models, including descriptions and relevant papers:
 
 | Attack Type | Description | Relevant Paper |
 |-------------|-------------|----------------------|
