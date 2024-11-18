@@ -106,6 +106,7 @@ __No affiliation links whatsoever__.
 
 While still a developing field, the systematic auditing of AI models is a growing field aimed at ensuring fairness, transparency, and ethical alignment in AI systems. It incorporates theories and practices from multiple fields.
 
+
 Comprehensive auditing frameworks have to 
 
 - consider multiple dimensions like governance, strategy, performance, monitoring, review, and communication in both the technical aspects (e.g. model accuracy) and the ethical considerations
@@ -293,6 +294,7 @@ Dedicated pages 👉 __[Transparency](./pages/transparency.md)__ and on __[algor
   - [Threat Modeling AI/ML Systems and Dependencies](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
   - [Threat Modelling and Risk Analysis for Large Language Model (LLM)-Powered Applications](https://arxiv.org/abs/2406.11007)
   - [Introducing Google’s Secure AI Framework](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/) - this page includes a summary of SAIF and examples for practitioners
+  - [MITRE ATLAS  (Adversarial Threat Landscape for Artificial-Intelligence Systems)](https://atlas.mitre.org/) - [full ATLAS Matrix](https://atlas.mitre.org/matrices/ATLAS)
 
 - Common attack vectors and vulnerabilities - [OWASP Machine Learning Security Top Ten](https://owasp.org/www-project-machine-learning-security-top-10/)
 
@@ -479,6 +481,7 @@ Emphasizes seven key requirements: human agency and oversight, technical robustn
 
 
 ### AI Safety
+- AI Alignment - AI Alignment is "simply" the problem of how to make AI systems that do what humans want without unintended side effects. In itself, a subset of AI Safety. The case for AI alignment is often put forward as a solution to AI safety risks since it involves getting the AI to fully understand and reliably respect (that is, align with) human values. However, much remains to be researched and written from a theoretical perspective on this matter. 
 - Risk assessment and mitigation strategies
 - Fail-safe mechanisms and graceful degradation
 - GenAI Safety considerations
@@ -500,6 +503,9 @@ References covering these two topics available in the [dedicated page](./pages/s
 
 
 # Auditing and Assessments
+
+
+- [Auditing large language models: a three‑layered approach](https://cdn.governance.ai/Auditing_LLMs_A_Three%E2%80%90Layered_Approach.pdf)
 
 ## Audit Planning and Scoping
 
@@ -710,7 +716,7 @@ These two courses are not specifically related to auditing but are interesting b
 - [Artificial Intelligence Ethics, Governance and policy challenges - CEPS Task Force Report](https://cdn.ceps.eu/wp-content/uploads/2019/02/AI_TFR.pdf)
 - [2024 AI ASSURANCE TECHNOLOGY MARKET REPORT](https://drive.google.com/file/d/1VcAdwn46qVfc2j-6ls0JXoVwHwuH4YSY/view)
 - [Code & conduct - How to create third party auditing regimes for AI](https://www.hkdca.com/wp-content/uploads/2024/06/code-and-conduct-ada-lovelace.pdf)
-
+- [Practicing Trustworthy Machine Learning (O'Reilly)](https://learning.oreilly.com/library/view/practicing-trustworthy-machine/9781098120269/)
 
 <br/>
 
