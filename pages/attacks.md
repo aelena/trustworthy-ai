@@ -30,6 +30,39 @@ Here's a comprehensive markdown table summarizing the various types of adversari
 - [Threats and Defenses in Federated Learning Life Cycle: A Comprehensive Survey and Challenges](https://arxiv.org/abs/2407.06754)
 - [Jailbreaking GPT-4V via Self-Adversarial Attacks with System Prompts](https://arxiv.org/html/2311.09127v2)
 
+# Emerging Attack Vectors (2024-2025)
+
+The following attack types have emerged or gained prominence more recently:
+
+| Attack Type | Description | Relevant Paper |
+|-------------|-------------|----------------|
+| Many-Shot Jailbreaking | Exploits long context windows by including many examples of undesired behavior in the prompt, overwhelming safety training through in-context learning. Models with longer contexts are particularly vulnerable. | "[Many-shot Jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking)" (Anthropic, 2024) |
+| Crescendo Attacks | Multi-turn jailbreaks that gradually escalate requests across a conversation, starting with benign queries and slowly moving toward harmful content. Exploits the model's tendency to maintain conversational consistency. | "[Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack](https://arxiv.org/abs/2404.01833)" (Russinovich et al., 2024) |
+| ASCII Art / Visual Encoding | Encodes harmful requests in ASCII art, Unicode patterns, or other visual formats that bypass text-based safety filters while remaining interpretable by the model. | "[ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs](https://arxiv.org/abs/2402.11753)" (Jiang et al., 2024) |
+| RAG Poisoning | Targets Retrieval-Augmented Generation systems by injecting malicious content into the knowledge base or retrieval corpus, causing the model to generate harmful outputs when retrieving poisoned documents. | "[PoisonedRAG: Knowledge Poisoning Attacks to Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2402.07867)" (Zou et al., 2024) |
+| Agent Hijacking | Manipulates AI agents through their tool inputs, memory systems, or inter-agent communications to redirect agent behavior toward attacker-controlled objectives. | "[AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784)" (Chen et al., 2024) |
+| Skeleton Key Attack | A jailbreak technique that convinces the model it's operating in a special "educational" or "research" mode where safety restrictions don't apply, often using elaborate framing. | "[Skeleton Key Jailbreak](https://www.microsoft.com/en-us/security/blog/2024/06/26/mitigating-skeleton-key-a-new-type-of-generative-ai-jailbreak-technique/)" (Microsoft, 2024) |
+| Multilingual Jailbreaks | Exploits weaker safety training in low-resource languages by translating harmful requests, or mixing languages to confuse safety classifiers. | "[Low-Resource Languages Jailbreak GPT-4](https://arxiv.org/abs/2310.02446)" (Yong et al., 2023) |
+| Voice/Audio Attacks | Targets speech-to-text and audio-enabled AI systems with adversarial audio, hidden commands, or voice cloning to bypass authentication or inject malicious instructions. | "[Speak Out of Turn: Safety Vulnerability of Large Language Models in Multi-turn Dialogue](https://arxiv.org/abs/2402.17262)" (Ying et al., 2024) |
+| Multimodal Attacks | Exploits vision-language models by embedding harmful instructions or adversarial patterns in images that override text-based safety measures. | "[Visual Adversarial Examples Jailbreak Aligned Large Language Models](https://arxiv.org/abs/2306.13213)" (Qi et al., 2023) |
+| Token Smuggling | Uses unusual tokenization, Unicode characters, or encoding tricks to bypass safety filters that operate on standard token patterns. | "[Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs](https://arxiv.org/abs/2311.16119)" (Schulhoff et al., 2023) |
+
+<br/>
+
+# Agentic AI Attack Surface
+
+With the rise of AI agents, new categories of vulnerabilities have emerged:
+
+| Attack Category | Description | Mitigations |
+|-----------------|-------------|-------------|
+| Tool Abuse | Tricking agents into misusing their tools (executing malicious code, accessing unauthorized systems, exfiltrating data) | Least privilege access, sandboxing, action logging |
+| Memory Poisoning | Injecting malicious content into agent memory/context to influence future behavior | Memory validation, access controls, expiration policies |
+| Instruction Hierarchy Attacks | Exploiting ambiguity between system prompts, user instructions, and retrieved content | Clear instruction boundaries, source validation |
+| Multi-Agent Manipulation | Compromising one agent to attack others in a multi-agent system | Agent isolation, communication monitoring |
+| Goal Hijacking | Redirecting agent objectives through carefully crafted inputs | Constitutional constraints, human oversight |
+
+<br/>
+
 # Other sources:
 - https://mindgard.ai/resources/ai-under-attack-six-key-adversarial-attacks-and-their-consequences
 - https://www.paloaltonetworks.com/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning
@@ -39,7 +72,7 @@ Here's a comprehensive markdown table summarizing the various types of adversari
 - https://www.dremio.com/wiki/adversarial-attacks-in-ai/
 - https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf
 - https://neptune.ai/blog/adversarial-machine-learning-defense-strategies
-- https://datascientest.com/en/adversarial-attack-definition-and-protection-against-this-threat 
+- https://datascientest.com/en/adversarial-attack-definition-and-protection-against-this-threat
 - https://bdtechtalks.com/2021/04/23/machine-learning-membership-inference-attacks/
 - [Adversarial Machine Learning: Defense Strategies](https://neptune.ai/blog/adversarial-machine-learning-defense-strategies)
 - https://www.nightfall.ai/ai-security-101/adversarial-attacks-and-perturbations
@@ -48,3 +81,6 @@ Here's a comprehensive markdown table summarizing the various types of adversari
 - [AI risk atlas](https://dataplatform.cloud.ibm.com/docs/content/wsj/ai-risk-atlas/ai-risk-atlas.html?context=wx)
 - https://www.restack.io/p/ai-model-answer-model-inversion-attack-example-cat-ai (includes references to further papers)
 - https://www.lasso.security/blog/prompt-injection
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming](https://arxiv.org/abs/2402.04249)
+- [StrongREJECT: Evaluating LLM Safety Refusals](https://arxiv.org/abs/2402.10260)
+- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
