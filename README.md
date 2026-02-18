@@ -35,12 +35,12 @@ __No affiliation links whatsoever__.
 
 ## Table of Contents
 
-### [1. Foundations](#1-foundations-1)
+### [1. Foundations](#1-foundations)
   - [What is Trustworthy AI](#what-is-trustworthy-ai)
   - [Core Principles](#core-principles)
   - [AI/ML Fundamentals](#aiml-fundamentals)
 
-### [2. AI Development Lifecycle](#2-ai-development-lifecycle-1)
+### [2. AI Development Lifecycle](#2-ai-development-lifecycle)
   - [Problem Scoping & Data](#problem-scoping--data)
     - [Data Quality & Governance](#data-quality--governance)
     - [Labeling & Augmentation](#labeling--augmentation)
@@ -51,7 +51,7 @@ __No affiliation links whatsoever__.
     - [Model Evaluation & Validation](#model-evaluation--validation)
   - [Deployment & Monitoring](#deployment--monitoring)
 
-### [3. Trustworthiness Dimensions](#3-trustworthiness-dimensions-1)
+### [3. Trustworthiness Dimensions](#3-trustworthiness-dimensions)
   - [Transparency & Explainability](#transparency--explainability)
   - [Fairness & Bias](#fairness--bias)
   - [Privacy & Security](#privacy--security)
@@ -63,13 +63,13 @@ __No affiliation links whatsoever__.
     - [Agentic AI Safety](#agentic-ai-safety)
     - [Frontier Model Evaluations](#frontier-model-evaluations)
 
-### [4. Governance & Regulation](#4-governance--regulation-1)
+### [4. Governance & Regulation](#4-governance--regulation)
   - [Legal Frameworks](#legal-frameworks)
   - [Organizational Governance](#organizational-governance)
   - [Ethics Frameworks](#ethics-frameworks)
   - [Sustainability & Environmental Impact](#sustainability--environmental-impact)
 
-### [5. Auditing & Assessment](#5-auditing--assessment-1)
+### [5. Auditing & Assessment](#5-auditing--assessment)
   - [Systematic Auditing of AI Models](#systematic-auditing-of-ai-models)
   - [Audit Process & Methodology](#audit-process--methodology)
   - [Tools & Techniques](#tools--techniques)
@@ -77,7 +77,7 @@ __No affiliation links whatsoever__.
   - [Specialized Auditing Skills](#specialized-auditing-skills)
   - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
 
-### [6. Resources](#6-resources-1)
+### [6. Resources](#6-resources)
   - [Tools, Templates & Checklists](#tools-templates--checklists)
   - [Commercial Auditing Tools](#commercial-auditing-tools)
   - [Training & Certifications](#training--certifications)
