@@ -1,5 +1,7 @@
 # Differential Privacy
 
+> **Code Examples**: See [differential_privacy.py](../code/differential_privacy.py) for practical implementations using Opacus (PyTorch) and TensorFlow Privacy, including privacy accounting and DP-SGD training.
+
 Differential privacy is a concept in data privacy that ensures the protection of individual data while allowing for the release of statistical information about a dataset. That is, it provides a way to release information about a dataset without revealing information about specific individuals in the data. It works by adding noise to data and query results, such that the query accuracy is retained but no user data is leaked. That math magic is achieved by calculating the patterns of groups within the dataset without disrupting information about individuals in the dataset. 
 
 The challenge lies in not impacting negatively the accuracy of the model. The higher the level of privacy that differential privacy can provide, the lower the model's accuracy. Differential privacy can be implemented using various techniques such as adding noise to data, using differentially private mechanisms, and applying differential privacy to machine learning models. 

@@ -1,5 +1,7 @@
 # Transparency in AI systems
 
+> **Code Examples**: See [explainability.py](../code/explainability.py) for practical implementations of SHAP and LIME for model interpretability, including global and local explanations.
+
 ## Basics
 
 - __Concepts and Taxonomy__ - Transparency in AI systems encompasses a [multi-layered framework](#multi-layered-framework) of concepts that extends beyond mere technical disclosure. Transparency means the degree to which an AI system's decisions, processes, and operations can be understood, traced, and verified by various stakeholders. The taxonomy of transparency can be broken down into three fundamental categories: 

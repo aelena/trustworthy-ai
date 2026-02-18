@@ -1,5 +1,7 @@
 # Types of Attacks
 
+> **Code Examples**: See [adversarial_testing.py](../code/adversarial_testing.py) for practical implementations using the Adversarial Robustness Toolbox (ART) and PyRIT concepts, including FGSM, PGD, and defense mechanisms.
+
 Here's a comprehensive markdown table summarizing the various types of adversarial attacks against AI models, including descriptions and relevant papers:
 
 | Attack Type | Description | Relevant Paper |

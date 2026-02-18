@@ -78,6 +78,7 @@ __No affiliation links whatsoever__.
   - [Soft Skills for AI Auditors](#soft-skills-for-ai-auditors)
 
 ### [6. Resources](#6-resources)
+  - [Code Examples](#code-examples)
   - [Tools, Templates & Checklists](#tools-templates--checklists)
   - [Commercial Auditing Tools](#commercial-auditing-tools)
   - [Training & Certifications](#training--certifications)
@@ -553,6 +554,20 @@ AI ethics literature has converged on 5 core principles: **transparency, justice
 ---
 
 # 6. Resources
+
+## Code Examples
+
+Practical Python implementations of key Trustworthy AI techniques are available in the [code/](./code/) folder:
+
+| Topic | File | Libraries |
+|-------|------|-----------|
+| Bias Testing | [bias_testing.py](./code/bias_testing.py) | AIF360, Fairlearn |
+| Explainability | [explainability.py](./code/explainability.py) | SHAP, LIME |
+| Adversarial Testing | [adversarial_testing.py](./code/adversarial_testing.py) | ART, PyRIT |
+| Evaluation Frameworks | [eval_frameworks.py](./code/eval_frameworks.py) | Inspect AI, Custom |
+| Differential Privacy | [differential_privacy.py](./code/differential_privacy.py) | Opacus, TensorFlow Privacy |
+
+Each file contains verbose explanations of the underlying concepts, practical runnable examples, and best practices for production use.
 
 ## Tools, Templates & Checklists
 

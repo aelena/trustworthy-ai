@@ -1,5 +1,7 @@
 # Bias and Fairness testing
 
+> **Code Examples**: See [bias_testing.py](../code/bias_testing.py) for practical implementations using AIF360 and Fairlearn libraries, including bias detection, measurement, and mitigation techniques.
+
 ## Overview of Bias and Fairness in ML
 
 ```mermaid
