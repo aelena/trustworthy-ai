@@ -1,5 +1,10 @@
 # Towards a Trustworthy AI Program
 
+[![Content licence: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-blue)](LICENSE-CONTENT)
+[![Code licence: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/aelena/trustworthy-ai)](https://github.com/aelena/trustworthy-ai/commits)
+[![Pages](https://img.shields.io/badge/pages-24-lightgrey)](pages/)
+
 This repository outlines a comprehensive program for setting up an in-house Trustworthy AI initiative or capability group. It spans areas beyond technology itself, including ethics, law, social sciences, and philosophy. The goal is to build a Body of Knowledge (BoK) for AI auditors within organizations.
 
 ```mermaid
@@ -30,6 +35,24 @@ __No affiliation links whatsoever__.
 </details>
 
 <br/>
+
+---
+
+## Status and review cadence
+
+| | |
+|---|---|
+| **Last full review** | February 2026 |
+| **Next review due** | See [UPGRADE-PLAN.md](UPGRADE-PLAN.md) |
+| **Fastest-moving sections** | Agentic safety, frontier model evaluations, regulation |
+
+A body of knowledge in a field this fast has a half-life, and pretending otherwise is worse than admitting it. The table above is the honest signal: material outside the fast-moving sections ages slowly and most of it is still current, but anything touching agentic safety, frontier evaluations or regulatory timelines should be checked against a primary source before you rely on it.
+
+[UPGRADE-PLAN.md](UPGRADE-PLAN.md) tracks what is known to need revision and why. If you spot something out of date, an issue is more useful than a polite silence.
+
+## The lab
+
+[`tai-lab/`](tai-lab/) is the practical companion: a FastAPI backend and a Next.js frontend that let you run evaluations against this material instead of only reading it. BYOK, deployable to Hugging Face Spaces and Vercel via the workflows in `.github/`.
 
 ---
 

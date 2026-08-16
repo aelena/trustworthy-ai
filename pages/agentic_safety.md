@@ -317,7 +317,7 @@ The field of agentic AI safety is rapidly evolving. Key research frontiers inclu
 
 ### Current Frameworks
 
-- **EU AI Act**: Agentic systems likely fall under high-risk category requiring conformity assessments, human oversight provisions, and traceability requirements
+- **EU AI Act**: Agentic systems likely fall under the high-risk category, requiring conformity assessments, human oversight provisions, and traceability requirements. **Note the revised timeline.** The Digital Omnibus on AI entered into force on 27 July 2026 and deferred the high-risk obligations that were originally due on 2 August 2026: they now apply from **2 December 2027** for stand-alone high-risk systems and **2 August 2028** for high-risk systems embedded in products. The Article 50 transparency duties — chatbot disclosure, AI-content marking, deepfake labelling — were *not* deferred and apply from August 2026. Plan against the transparency obligations now and the high-risk regime on the later dates; do not assume the whole Act slipped.
 - **NIST AI RMF**: Provides governance and risk management guidance; the 2024 Generative AI Profile (NIST.AI.600-1) adds agent-specific considerations
 - **ISO/IEC 42001**: Management system requirements applicable to agentic systems, emphasizing continual improvement and risk-based controls
 

@@ -1,0 +1,50 @@
+# Towards a Trustworthy AI Program
+
+> A body of knowledge for building an in-house AI assurance capability: evaluation, bias, privacy, adversarial robustness, agentic safety, governance and regulation. Prose in `pages/` is CC BY 4.0; code in `code/` and `tai-lab/` is MIT. Fast-moving sections (agentic safety, frontier evaluations, regulation) carry a review date — check UPGRADE-PLAN.md before relying on them.
+
+## Foundations
+
+- [Trustworthy AI](pages/trustworthy_ai.md): What the term covers and where its boundaries are.
+- [Principles](pages/principles.md): The core principles and their tensions.
+- [AI overview](pages/ai_overview.md): Orientation for readers arriving from a non-technical function.
+- [Neural networks overview](pages/neural_networks_overview.md): The minimum model of the technology needed to audit it.
+- [Challenges](pages/challenges.md): Why assurance is hard in practice rather than in principle.
+
+## Lifecycle
+
+- [AI/ML development lifecycle](pages/aiml_dev_lifecycle.md): Where assurance activities attach to delivery.
+- [Data quality and governance](pages/data_qa.md): The upstream determinant of everything downstream.
+- [Labelling and augmentation](pages/label_aug.md): Provenance and quality of supervision.
+- [Synthetic data](pages/synth_data.md): When it helps, and what it hides.
+- [RLHF and human feedback](pages/rlhf.md): Alignment methods and their failure modes.
+- [Cross-validation](pages/cross_valid.md): Validation practice.
+- [Process](pages/process.md): The assurance process itself.
+
+## Trustworthiness dimensions
+
+- [Transparency](pages/transparency.md): Disclosure obligations and what they require in documentation.
+- [Algorithmic transparency](pages/algo_trans.md): Explaining decisions to the people they affect.
+- [Bias](pages/bias.md): Measurement, mitigation and the trade-offs between fairness definitions.
+- [Types of AI bias](pages/types_ai_bias.md): A working taxonomy.
+- [Differential privacy](pages/diff_priv.md): Formal privacy guarantees and their cost.
+- [Attacks](pages/attacks.md): Adversarial, extraction, inference and poisoning attacks, with primary references.
+- [MLSecOps](pages/mlsecops.md): Security practice across the lifecycle.
+- [Agentic safety](pages/agentic_safety.md): Threat model and controls for tool-using agents. Fastest-moving page here.
+
+## Governance
+
+- [Assurance](pages/assurance.md): What an assurance function does.
+- [Evidence gathering](pages/evidence_gather.md): What auditors actually need to collect.
+- [Sustainability](pages/sustain.md): Environmental cost as a governance concern.
+- [Lawler](pages/lawler.md): Short note.
+
+## Code and lab
+
+- [code/](code/README.md): Adversarial testing, bias testing, differential privacy, evaluation frameworks and explainability modules.
+- [tai-lab/](tai-lab/README.md): FastAPI backend and Next.js frontend for running evaluations against this material. BYOK.
+
+## Optional
+
+- [UPGRADE-PLAN.md](UPGRADE-PLAN.md): Known staleness, what was corrected and when the next review is due.
+- [LICENSE](LICENSE): MIT, for code.
+- [LICENSE-CONTENT](LICENSE-CONTENT): CC BY 4.0, for prose.
