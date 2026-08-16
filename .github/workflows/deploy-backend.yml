@@ -1,0 +1,71 @@
+name: Deploy backend (HF Spaces)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tai-lab/backend/**"
+      - "pages/**"
+      - "code/**"
+      - "README.md"
+      - "tai-lab/ci-cd/hf-spaces/**"
+      - ".github/workflows/deploy-backend.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-backend
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Stage Space contents
+        run: |
+          set -euo pipefail
+          STAGE="$RUNNER_TEMP/space"
+          mkdir -p "$STAGE"
+
+          # The Space root needs the Dockerfile, the backend source, and the BoK.
+          cp tai-lab/backend/Dockerfile "$STAGE/Dockerfile"
+          cp -R tai-lab/backend "$STAGE/backend"
+          cp README.md "$STAGE/README.md"
+          cp -R pages "$STAGE/pages"
+          cp -R code "$STAGE/code"
+
+          # HF Spaces expects a README header with metadata at the repo root.
+          cat > "$STAGE/README.md.tmp" <<'EOF'
+          ---
+          title: tai-lab backend
+          emoji: 🛡️
+          colorFrom: indigo
+          colorTo: gray
+          sdk: docker
+          app_port: 7860
+          pinned: false
+          ---
+
+          EOF
+          cat "$STAGE/README.md" >> "$STAGE/README.md.tmp"
+          mv "$STAGE/README.md.tmp" "$STAGE/README.md"
+
+      - name: Push to Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USERNAME: ${{ secrets.HF_USERNAME }}
+          HF_SPACE_NAME: ${{ secrets.HF_SPACE_NAME }}
+        run: |
+          set -euo pipefail
+          STAGE="$RUNNER_TEMP/space"
+          cd "$STAGE"
+          git init -b main
+          git config user.email "ci@tai-lab.local"
+          git config user.name "tai-lab CI"
+          git add .
+          git commit -m "deploy: ${GITHUB_SHA}"
+          git remote add space "https://${HF_USERNAME}:${HF_TOKEN}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}"
+          git push --force space main

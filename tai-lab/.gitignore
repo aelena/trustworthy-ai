@@ -1,0 +1,42 @@
+# Private docs (shared memory between user and assistant — not for the repo)
+design-specs.md
+deployment-guide.md
+
+# Env
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data
+*.sqlite
+*.sqlite3
+*.db
+data/runs/
+data/uploads/
